@@ -1,0 +1,11 @@
+*/Backup/
+Backup/
+
+# Movie files
+*.mov
+*.mp4
+
+# Mac
+.DS_Store
+
+
