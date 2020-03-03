@@ -8,4 +8,5 @@ Backup/
 # Mac
 .DS_Store
 
-
+# Versioned files
+*.[0-9]*.toe
