@@ -91,7 +91,7 @@ float volume( vec3 p )
         for(float y = 0; y < side_len; y++) {
             vec2 uv = vec2(x+0.5, y+0.5) / vec2(side_len);
             vec4 idea = texture(sTD2DInputs[0], uv);
-            float MAX_RAD = 0.425;
+            float MAX_RAD = 0.225;
             float dist = length(p - idea.xyz);
             float rad = clamp(dist / MAX_RAD + (f - 0.5) * 0.4, 0., 1.);
             d += pow((1. - rad), 1.) * f;
