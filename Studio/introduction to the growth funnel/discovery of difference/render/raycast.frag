@@ -1,19 +1,24 @@
 uniform float time;	
-vec2 iResolution = vec2(960, 540);
-
-// uniform float exampleUniform;
+uniform vec3 cam_pos;
+uniform vec3 cam_look;
+uniform vec2 resolution;
+uniform float num_ideas;
+uniform float fov;
 
 out vec4 fragColor;
 
+vec3 rayDirection(float fieldOfView, vec2 size, vec2 fragCoord) {
+    vec2 xy = fragCoord - size / 2.0;
+    float z = size.y / tan(radians(fieldOfView) / 2.0);
+    return normalize(vec3(xy, -z));
+}
 
-
-// camera from https://www.shadertoy.com/view/4dcBRN
-mat3 camera(vec3 ro, vec3 ta, float cr ) {
-    vec3 cw = normalize(ta - ro);
-    vec3 cp = vec3(sin(cr), cos(cr),0.);
-    vec3 cu = normalize( cross(cw,cp) );
-    vec3 cv = normalize( cross(cu,cw) );
-    return mat3( cu, cv, cw );
+mat3 viewMatrix(vec3 eye, vec3 center, vec3 up) {
+    // Based on gluLookAt man page
+    vec3 f = normalize(center - eye);
+    vec3 s = normalize(cross(f, up));
+    vec3 u = cross(s, f);
+    return mat3(s, u, -f);
 }
 
 // fbm from https://www.shadertoy.com/view/lss3zr
@@ -45,15 +50,14 @@ float fbm( vec3 p ) {
     return f;
 }
 
-
 // smin from the legend iq 
 float smin( float d1, float d2, float k ) {
     float h = clamp( 0.5 + 0.5*(d2-d1)/k, 0.0, 1.0 );
     return mix( d2, d1, h ) - k*h*(1.0-h); 
 }
 
-#define VOL_STEPS 2.*48
-#define VOL_LENGTH 7.
+#define VOL_LENGTH 6. // total length of the raymarch
+#define VOL_STEPS 2.*48 // steps to take within that length
 #define VOL_DENSITY 4.
 
 #define SHA_STEPS 10
@@ -61,7 +65,7 @@ float smin( float d1, float d2, float k ) {
 #define SHA_DENSITY 0.12
 
 #define DLIGHT_DIR normalize(vec3(2., 5., 1.))
-#define DLIGHT_POW 0.2
+#define DLIGHT_POW 2.9
 
 #define ALIGHT_COL vec3(0.15, 0.45, 1.1)
 #define ALIGHT_DENSITY 0.2
@@ -74,23 +78,33 @@ float jitter;
 float volume( vec3 p )
 {
     // get noise value
-    float t = time * 0.125;
+    float t = time * 0.825;
     
     vec3 q = 0.9 * (p - vec3(0.0,0.5,1.0) * t * 0.5);
     float f = fbm(q);
-    
-    float s1 = 1.0 - length(p * vec3(0.6, 1.3, 0.8)) + f * 2.2;
-    float s2 = 1.0 - length(p * vec3(1.1, 1.2, 0.8)) + f * 2.9;
-    float s3 = 1.0 - length(p * vec3(sin(t) * 0.4 + 0.6, 1., 1.)) + f * 3.4;
-    float s4 = 0.8 * smin(s2, s3, 3.);
 
+    float d = 0.;
+
+    float side_len = floor(sqrt(num_ideas));
+    for(float x = 0; x < side_len; x++) {
+        for(float y = 0; y < side_len; y++) {
+            vec2 uv = vec2(x+0.5, y+0.5) / vec2(side_len);
+            vec4 idea = texture(sTD2DInputs[0], uv);
+            float MAX_RAD = 0.125;
+            float dist = length(p - idea.xyz);
+            float rad = clamp(dist / MAX_RAD + f*0.1, 0., 1.);
+            d += 1. - rad;
+        }
+    }
     
-    float d = mix(s1, s4, (sin(t) + 1.) / 2.);
+    // implicit geometries using sdf
+    // float s1 = sdSphere(p - POS_1 + f * 0.9, 2.);
+    // float s2 = sdSphere(p - POS_2 + f * 1.7, 1.5);
     
     return d;
 }
 
-vec4 raymarchVolume(vec3 rot, vec3 ray) {
+vec4 raymarchVolume(vec3 origin, vec3 ray) {
     float stepLength = VOL_LENGTH / float(VOL_STEPS);
     float shadowStepLength = SHA_LENGTH / float(SHA_STEPS);
     
@@ -101,7 +115,7 @@ vec4 raymarchVolume(vec3 rot, vec3 ray) {
     float density = 0.;
     float transmittance = 1.;
     vec3 energy = vec3(0.);
-    vec3 pos = rot + ray * jitter * stepLength;
+    vec3 pos = origin + ray * jitter * stepLength;
     
     // raymarch
     for (int i = 0; i < VOL_STEPS; i++) {
@@ -148,20 +162,23 @@ vec4 raymarchVolume(vec3 rot, vec3 ray) {
 
 void main()
 {
+    // magic number idk
+    float FOV_OFFSET = 6;
+
     // set up raycast
-    vec2 origin = 2. * (vUV.st - 0.5);
-    vec3 rot = vec3(cos(time * .3) * 8., -3.5, sin(time * .3) * 8.);
-    vec3 tran = vec3(0., 0.4, 0.3);
-    mat3 cam = camera(rot, tran, 0.);
-    vec3 ray = cam * normalize(vec3(origin, 2.5));
+    vec2 fragCoord = vUV.st * resolution.xy;
+    vec3 viewDir = rayDirection(fov+FOV_OFFSET, resolution, fragCoord);
+    mat3 viewToWorld = viewMatrix(cam_pos, cam_look, vec3(0,1,0));
+    vec3 ray = viewToWorld * viewDir;
     
-    jitter = 0.4 * hash(origin.x + origin.y * 54. + time);
-    vec4 col = raymarchVolume(rot, ray);
+    jitter = 0.4 * hash(cam_pos.x + cam_pos.y * 54. + time);
+    vec4 col = raymarchVolume(cam_pos, ray);
     
     // Output to screen
-    vec3 top_col = vec3(0.3, 0.6, 1.);
-    vec3 bot_col = vec3(0.05, 0.35, 1.);
-    vec3 result = col.rgb + mix(top_col, bot_col, origin.y - 0.55) * col.a;
-    
+    vec3 top_col = vec3(1.);
+    vec3 bot_col = vec3(1.);
+    vec3 bg = mix(top_col, bot_col, cam_pos.y - 0.55);
+
+    vec3 result = (col.rgb + bg) * col.a;
     fragColor = vec4(result, 1.);
 }
