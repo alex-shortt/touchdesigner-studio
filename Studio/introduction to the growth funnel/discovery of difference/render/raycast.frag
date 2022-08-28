@@ -56,21 +56,21 @@ float smin( float d1, float d2, float k ) {
     return mix( d2, d1, h ) - k*h*(1.0-h); 
 }
 
-#define VOL_LENGTH 6. // total length of the raymarch
+#define VOL_LENGTH 7. // total length of the raymarch
 #define VOL_STEPS 2.*48 // steps to take within that length
-#define VOL_DENSITY 4.
+#define VOL_DENSITY 2.
 
 #define SHA_STEPS 10
 #define SHA_LENGTH 2.
 #define SHA_DENSITY 0.12
 
-#define DLIGHT_DIR normalize(vec3(2., 5., 1.))
-#define DLIGHT_POW 2.9
+#define DLIGHT_DIR normalize(vec3(2., 8., 1.))
+#define DLIGHT_POW 1.9
 
-#define ALIGHT_COL vec3(0.15, 0.45, 1.1)
+#define ALIGHT_COL vec3(1., 1., 1.)
 #define ALIGHT_DENSITY 0.2
 
-#define EXTINCTION_COL vec3(0.6, 0.6, 1.)
+#define EXTINCTION_COL vec3(0.1, 0.1, 0.1)
 
 float jitter;
 
@@ -78,9 +78,10 @@ float jitter;
 float volume( vec3 p )
 {
     // get noise value
-    float t = time * 0.825;
+    float t = time * 0.125;
     
-    vec3 q = 0.9 * (p - vec3(0.0,0.5,1.0) * t * 0.5);
+    float noise_sc = 2.5;
+    vec3 q = 2. * ((p * noise_sc) - vec3(0.0,0.5,1.0) * t);
     float f = fbm(q);
 
     float d = 0.;
@@ -90,10 +91,10 @@ float volume( vec3 p )
         for(float y = 0; y < side_len; y++) {
             vec2 uv = vec2(x+0.5, y+0.5) / vec2(side_len);
             vec4 idea = texture(sTD2DInputs[0], uv);
-            float MAX_RAD = 0.125;
+            float MAX_RAD = 0.425;
             float dist = length(p - idea.xyz);
-            float rad = clamp(dist / MAX_RAD + f*0.1, 0., 1.);
-            d += 1. - rad;
+            float rad = clamp(dist / MAX_RAD + (f - 0.5) * 0.4, 0., 1.);
+            d += pow((1. - rad), 1.) * f;
         }
     }
     
