@@ -56,9 +56,9 @@ float smin( float d1, float d2, float k ) {
     return mix( d2, d1, h ) - k*h*(1.0-h); 
 }
 
-#define VOL_LENGTH 7. // total length of the raymarch
-#define VOL_STEPS 2.*48 // steps to take within that length
-#define VOL_DENSITY 2.
+#define VOL_LENGTH 20. // total length of the raymarch
+#define VOL_STEPS 4.*48 // steps to take within that length
+#define VOL_DENSITY 2.8
 
 #define SHA_STEPS 10
 #define SHA_LENGTH 2.
@@ -89,10 +89,10 @@ float volume( vec3 p )
     float side_len = floor(sqrt(num_ideas));
     for(float x = 0; x < side_len; x++) {
         for(float y = 0; y < side_len; y++) {
-            vec2 uv = vec2(x+0.5, y+0.5) / vec2(side_len);
-            vec4 idea = texture(sTD2DInputs[0], uv);
+            vec2 uv = vec2(x, y) / vec2(side_len);
+            vec3 idea_pos = texture(sTD2DInputs[0], uv).rgb;
             float MAX_RAD = 0.225;
-            float dist = length(p - idea.xyz);
+            float dist = length(p - idea_pos);
             float rad = clamp(dist / MAX_RAD + (f - 0.5) * 0.4, 0., 1.);
             d += pow((1. - rad), 1.) * f;
         }
