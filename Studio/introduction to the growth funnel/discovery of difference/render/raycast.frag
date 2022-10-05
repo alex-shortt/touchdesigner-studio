@@ -58,7 +58,7 @@ float smin( float d1, float d2, float k ) {
 
 #define VOL_LENGTH 20. // total length of the raymarch
 #define VOL_STEPS 4.*48 // steps to take within that length
-#define VOL_DENSITY 2.8
+#define VOL_DENSITY 4.8
 
 #define SHA_STEPS 10
 #define SHA_LENGTH 2.
@@ -78,10 +78,10 @@ float jitter;
 float volume( vec3 p )
 {
     // get noise value
-    float t = time * 0.125;
+    float t = time * 0.925;
     
     float noise_sc = 2.5;
-    vec3 q = 2. * ((p * noise_sc) - vec3(0.0,0.5,1.0) * t);
+    vec3 q = 0.4 * ((p * noise_sc) - vec3(0.0,0.5,1.0) * t);
     float f = fbm(q);
 
     float d = 0.;
@@ -89,11 +89,12 @@ float volume( vec3 p )
     float side_len = floor(sqrt(num_ideas));
     for(float x = 0; x < side_len; x++) {
         for(float y = 0; y < side_len; y++) {
-            vec2 uv = vec2(x, y) / vec2(side_len);
-            vec3 idea_pos = texture(sTD2DInputs[0], uv).rgb;
-            float MAX_RAD = 0.225;
-            float dist = length(p - idea_pos);
-            float rad = clamp(dist / MAX_RAD + (f - 0.5) * 0.4, 0., 1.);
+            vec2 uv = vec2(x + 0.1, y + 0.1) / vec2(side_len);
+            vec3 tex = texture(sTD2DInputs[0], uv).rgb;
+            vec3 idea_pos = tex.xyz;
+            float MAX_RAD = 0.3;
+            float dist = clamp(length(p - idea_pos), -1., 1.); // not sure why but clamp fixes things
+            float rad = clamp(dist / MAX_RAD + (f - 0.5) * 7., 0., 1.);
             d += pow((1. - rad), 1.) * f;
         }
     }
@@ -172,7 +173,7 @@ void main()
     mat3 viewToWorld = viewMatrix(cam_pos, cam_look, vec3(0,1,0));
     vec3 ray = viewToWorld * viewDir;
     
-    jitter = 0.4 * hash(cam_pos.x + cam_pos.y * 54. + time);
+    jitter = 0.1 * hash(cam_pos.x + cam_pos.y * 24. + time*0.05);
     vec4 col = raymarchVolume(cam_pos, ray);
     
     // Output to screen
