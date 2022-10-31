@@ -7,6 +7,13 @@ uniform float fov;
 
 out vec4 fragColor;
 
+vec3 hsv2rgb(vec3 c)
+{
+    vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+    vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
+    return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+}
+
 vec3 rayDirection(float fieldOfView, vec2 size, vec2 fragCoord) {
     vec2 xy = fragCoord - size / 2.0;
     float z = size.y / tan(radians(fieldOfView) / 2.0);
@@ -56,13 +63,15 @@ float smin( float d1, float d2, float k ) {
     return mix( d2, d1, h ) - k*h*(1.0-h); 
 }
 
-#define VOL_LENGTH 20. // total length of the raymarch
+#define VOL_LENGTH 60. // total length of the raymarch
 #define VOL_STEPS 4.*48 // steps to take within that length
 #define VOL_DENSITY 4.8
 
 #define SHA_STEPS 10
 #define SHA_LENGTH 2.
 #define SHA_DENSITY 0.12
+
+#define FOG_FAR 60.
 
 #define DLIGHT_DIR normalize(vec3(2., 8., 1.))
 #define DLIGHT_POW 1.9
@@ -94,7 +103,7 @@ float volume( vec3 p )
             vec3 idea_pos = tex.xyz;
             float MAX_RAD = 0.3;
             float dist = clamp(length(p - idea_pos), -1., 1.); // not sure why but clamp fixes things
-            float rad = clamp(dist / MAX_RAD + (f - 0.5) * 7., 0., 1.);
+            float rad = clamp(dist / MAX_RAD + (f - 0.5) * 4., 0., 1.);
             d += pow((1. - rad), 1.) * f;
         }
     }
@@ -123,11 +132,21 @@ vec4 raymarchVolume(vec3 origin, vec3 ray) {
     for (int i = 0; i < VOL_STEPS; i++) {
         float dsample = volume(pos);
         
-        if(transmittance < 0.05) break;
+        if(transmittance < 0.001) break;
+
+        float dist_to_cen = length(pos) / FOG_FAR;
+
+        // apply fog
+        dsample = min(dsample, 1 - dist_to_cen);
         
-        if (dsample > 0.001) {
+        if (dsample > 0.0001) {
             vec3 lpos = pos;
             float shadow = 0.;
+
+            float hue = atan(pos.y, pos.x) / (2. * 3.14159);
+            float sat = dist_to_cen * 10.;
+            float val = 0.8;
+            vec3 col = hsv2rgb(vec3(hue, sat, val));
             
             // raymarch shadows
             for (int s = 0; s < SHA_STEPS; s++) {
@@ -138,7 +157,7 @@ vec4 raymarchVolume(vec3 origin, vec3 ray) {
             
             // combine shadow with density
             density = clamp(dsample * volumeDensity, 0., 1.);
-            vec3 shadowterm = exp(-shadow * shadowDensity / EXTINCTION_COL);
+            vec3 shadowterm = exp(-shadow * shadowDensity / col);
             vec3 absorbedlight = shadowterm * density;
             energy += absorbedlight * transmittance;
             transmittance *= 1. - density;     
@@ -151,8 +170,8 @@ vec4 raymarchVolume(vec3 origin, vec3 ray) {
                 asample = volume(lpos);
                 shadow += asample / (0.05 + s * 1.3);
             }
-            
-            energy += exp(-shadow * ALIGHT_DENSITY) * density * ALIGHT_COL * transmittance;
+
+            energy += exp(-shadow * ALIGHT_DENSITY) * density * col * transmittance;
         }
 
         pos += ray * stepLength;
@@ -173,7 +192,7 @@ void main()
     mat3 viewToWorld = viewMatrix(cam_pos, cam_look, vec3(0,1,0));
     vec3 ray = viewToWorld * viewDir;
     
-    jitter = 0.1 * hash(cam_pos.x + cam_pos.y * 24. + time*0.05);
+    // jitter = 0.1 * hash(cam_pos.x + cam_pos.y * 24. + time*0.05);
     vec4 col = raymarchVolume(cam_pos, ray);
     
     // Output to screen
@@ -181,6 +200,6 @@ void main()
     vec3 bot_col = vec3(1.);
     vec3 bg = mix(top_col, bot_col, cam_pos.y - 0.55);
 
-    vec3 result = (col.rgb + bg) * col.a;
+    vec3 result = mix(col.rgb,  vec3(1.),  col.a);
     fragColor = vec4(result, 1.);
 }
