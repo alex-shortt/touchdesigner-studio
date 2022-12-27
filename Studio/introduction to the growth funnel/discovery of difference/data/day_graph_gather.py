@@ -60,19 +60,26 @@ with open('day_graph.csv', 'w') as f:
     for day_path in num_day_lookup:
         # open file
         with open(day_path, 'r+') as day_file:
-            num_day = num_day_lookup[day_path]
-            daily_text = day_file.read()
-            # end up with arr of words
-            links = get_links(daily_text)
-            num_links = len(links)
+            links = get_links(day_file.read())
 
-            clean_name = day_path.split("/daily/")[1].replace(".md", "")
+            num_day = num_day_lookup[day_path]
+            day_name = day_path.split("/daily/")[1].replace(".md", "")
+        
+            if len(links) == 0:
+                f.write(str(num_day) + "," + day_name + "," + "" + "," + "" + "\n")
+                continue
+
             for link in links:
-                # catch error if link is not in path_lookup
                 if link not in path_lookup:
                     continue
+
                 sub_path = path_lookup[link]
                 sub_text = open(sub_path, 'r+').read()
                 sub_links = get_links(sub_text)
+
+                if len(sub_links) == 0:
+                    f.write(str(num_day) + "," + day_name + ",\"" + link + "\"," + "" + "\n")
+                    continue
+
                 for sub_link in sub_links:
-                    f.write(str(num_day) + "," + clean_name + "," + link + "," + sub_link + "\n")
+                    f.write(str(num_day) + "," + day_name + ",\"" + link + "\",\"" + sub_link + "\"\n")
