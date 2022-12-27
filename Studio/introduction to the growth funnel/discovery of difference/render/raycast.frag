@@ -7,13 +7,6 @@ uniform float fov;
 
 out vec4 fragColor;
 
-vec3 hsv2rgb(vec3 c)
-{
-    vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
-    vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
-    return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
-}
-
 vec3 rayDirection(float fieldOfView, vec2 size, vec2 fragCoord) {
     vec2 xy = fragCoord - size / 2.0;
     float z = size.y / tan(radians(fieldOfView) / 2.0);
@@ -63,25 +56,106 @@ float smin( float d1, float d2, float k ) {
     return mix( d2, d1, h ) - k*h*(1.0-h); 
 }
 
-#define VOL_LENGTH 60. // total length of the raymarch
-#define VOL_STEPS 4.*48 // steps to take within that length
-#define VOL_DENSITY 4.8
+vec3 srgb_from_linear_srgb(vec3 x) {
 
-#define SHA_STEPS 10
-#define SHA_LENGTH 2.
-#define SHA_DENSITY 0.12
+    vec3 xlo = 12.92*x;
+    vec3 xhi = 1.055 * pow(x, vec3(0.4166666666666667)) - 0.055;
+    
+    return mix(xlo, xhi, step(vec3(0.0031308), x));
 
-#define FOG_FAR 60.
+}
 
-#define DLIGHT_DIR normalize(vec3(2., 8., 1.))
-#define DLIGHT_POW 1.9
+vec3 linear_srgb_from_srgb(vec3 x) {
 
-#define ALIGHT_COL vec3(1., 1., 1.)
-#define ALIGHT_DENSITY 0.2
+    vec3 xlo = x / 12.92;
+    vec3 xhi = pow((x + 0.055)/(1.055), vec3(2.4));
+    
+    return mix(xlo, xhi, step(vec3(0.04045), x));
 
-#define EXTINCTION_COL vec3(0.1, 0.1, 0.1)
+}
+
+
+//////////////////////////////////////////////////////////////////////
+// oklab transform and inverse from
+// https://bottosson.github.io/posts/oklab/
+
+const mat3 fwdA = mat3(1.0, 1.0, 1.0,
+                    0.3963377774, -0.1055613458, -0.0894841775,
+                    0.2158037573, -0.0638541728, -1.2914855480);
+                    
+const mat3 fwdB = mat3(4.0767245293, -1.2681437731, -0.0041119885,
+                    -3.3072168827, 2.6093323231, -0.7034763098,
+                    0.2307590544, -0.3411344290,  1.7068625689);
+
+const mat3 invB = mat3(0.4121656120, 0.2118591070, 0.0883097947,
+                    0.5362752080, 0.6807189584, 0.2818474174,
+                    0.0514575653, 0.1074065790, 0.6302613616);
+                    
+const mat3 invA = mat3(0.2104542553, 1.9779984951, 0.0259040371,
+                    0.7936177850, -2.4285922050, 0.7827717662,
+                    -0.0040720468, 0.4505937099, -0.8086757660);
+
+vec3 oklab_from_linear_srgb(vec3 c) {
+    vec3 lms = invB * c;
+    return invA * (sign(lms)*pow(abs(lms), vec3(0.3333333333333)));
+}
+vec3 linear_srgb_from_oklab(vec3 c) {
+    vec3 lms = fwdA * c;
+    return fwdB * (lms * lms * lms);
+}
+vec3 rgb2hsv(vec3 c)
+{
+    vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);
+    vec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));
+    vec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));
+
+    float d = q.x - min(q.w, q.y);
+    float e = 1.0e-10;
+    return vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);
+}
+vec3 hsv2rgb(vec3 c)
+{
+    vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
+    vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
+    return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
+}
+const float max_chroma = 0.33;
+//////////////////////////////////////////////////////////////////////
+
+
+#define PI 3.14159265359    
+
+#define VOL_LENGTH 40. // total length of the raymarch
+#define VOL_STEPS 2*48 // steps to take within that length
+#define VOL_DENSITY 1.9
+
+#define SHA_STEPS 30.
+#define SHA_DENSITY 0.22
+
+#define FOG_FAR 40.
+
+#define ALIGHT_COL vec3(1.)
+#define ALIGHT_POW 0.4
+
+int num_p_lights = 2;
+vec4 p_lights[2] = vec4[](vec4(2.2, -1.5, 0.9, .7), vec4(-1., 0.9, 0., 0.9));
 
 float jitter;
+
+vec3 pos_to_mediation(vec3 p) {
+    float theta = atan(p.z, p.x);
+	float rad = length(p) / 8.; // try to norm from 0, 1
+    
+    // ok lab stuff
+    float L = 0.6;
+    float chroma = rad*0.33229211;
+    float a = chroma*cos(theta);
+    float b = chroma*sin(theta);
+    vec3 lab = vec3(L, a, b);
+    vec3 rgb = linear_srgb_from_oklab(lab);
+    rgb = clamp(rgb, 0.0, 1.);
+    return srgb_from_linear_srgb(rgb);
+}
 
 // returns (color, depth)
 float volume( vec3 p )
@@ -89,89 +163,94 @@ float volume( vec3 p )
     // get noise value
     float t = time * 0.925;
     
-    float noise_sc = 2.5;
-    vec3 q = 0.4 * ((p * noise_sc) - vec3(0.0,0.5,1.0) * t);
+    float noise_scale = 2.5;
+
+    vec3 q = 0.4 * ((p * noise_scale) - vec3(0., 0., 1.0) * t);
     float f = fbm(q);
 
-    float d = 0.;
+    float d, dist, rad, MAX_RAD = 0.225;
+    vec2 uv;
+    vec3 tex, idea_pos;
 
     float side_len = floor(sqrt(num_ideas));
     for(float x = 0; x < side_len; x++) {
         for(float y = 0; y < side_len; y++) {
-            vec2 uv = vec2(x + 0.1, y + 0.1) / vec2(side_len);
-            vec3 tex = texture(sTD2DInputs[0], uv).rgb;
-            vec3 idea_pos = tex.xyz;
-            float MAX_RAD = 0.3;
-            float dist = clamp(length(p - idea_pos), -1., 1.); // not sure why but clamp fixes things
-            float rad = clamp(dist / MAX_RAD + (f - 0.5) * 4., 0., 1.);
+            uv = vec2(x + 0.1, y + 0.1) / vec2(side_len);
+            tex = texture(sTD2DInputs[0], uv).rgb;
+            idea_pos = tex.xyz;
+
+            dist = clamp(length(p - idea_pos), -100., 100.); // not sure why but clamp fixes things
+            rad = dist / MAX_RAD;
+            rad += (f - 0.5) * 14.;
+            rad = clamp(rad, 0., 1.);
             d += pow((1. - rad), 1.) * f;
         }
     }
-    
-    // implicit geometries using sdf
-    // float s1 = sdSphere(p - POS_1 + f * 0.9, 2.);
-    // float s2 = sdSphere(p - POS_2 + f * 1.7, 1.5);
-    
+
+    // apply fog
+    // float dist_to_cen = length(p) / FOG_FAR;
+    // d = min(d, 1 - dist_to_cen);  
+
     return d;
 }
 
 vec4 raymarchVolume(vec3 origin, vec3 ray) {
     float stepLength = VOL_LENGTH / float(VOL_STEPS);
-    float shadowStepLength = SHA_LENGTH / float(SHA_STEPS);
-    
-    float volumeDensity = VOL_DENSITY * shadowStepLength;
-    float shadowDensity = SHA_DENSITY * shadowStepLength;
-    vec3 dlight = DLIGHT_POW * DLIGHT_DIR * shadowStepLength;
+    float volumeDensity = VOL_DENSITY * stepLength;
     
     float density = 0.;
     float transmittance = 1.;
     vec3 energy = vec3(0.);
+    float shadowDensity;
     vec3 pos = origin + ray * jitter * stepLength;
+
+    float shadow, p_step_len, p_light_pow, lsample;
+    vec3 absorbedlight, shadowterm, p_light_offset, p_light_col;
+    vec4 p_light;
     
     // raymarch
     for (int i = 0; i < VOL_STEPS; i++) {
         float dsample = volume(pos);
         
-        if(transmittance < 0.001) break;
+        if(transmittance < 0.0001) break;
 
-        float dist_to_cen = length(pos) / FOG_FAR;
-
-        // apply fog
-        dsample = min(dsample, 1 - dist_to_cen);
-        
-        if (dsample > 0.0001) {
+        if (dsample > 0.00001) {
             vec3 lpos = pos;
-            float shadow = 0.;
 
-            float hue = atan(pos.y, pos.x) / (2. * 3.14159);
-            float sat = dist_to_cen * 10.;
-            float val = 0.8;
-            vec3 col = hsv2rgb(vec3(hue, sat, val));
-            
-            // raymarch shadows
-            for (int s = 0; s < SHA_STEPS; s++) {
-                lpos += dlight;
-                float lsample = volume(lpos);
-                shadow += lsample;
-            }
-            
+            // raymarch shadows from each point light
+            shadow = 0.;
+            shadowterm = vec3(0.);
+            // for(int l = 0; l < num_p_lights; l++) {
+            //     p_light = p_lights[l];
+
+            //     if(p_light.a <= 0.) continue;
+
+            //     p_light_offset = p_light.xyz - lpos;
+            //     p_step_len = length(p_light_offset) / float(SHA_STEPS);
+            //     for (float s = 0; s < SHA_STEPS; s += 1.) {
+            //         lpos += p_light_offset / float(SHA_STEPS);
+            //         p_light_pow = p_light.a / pow(s * p_step_len, 2.);
+            //         lsample = volume(lpos);
+            //         shadow += 1. / p_light_pow * lsample;
+            //     }
+
+            //     shadowDensity = SHA_DENSITY * p_step_len;
+            //     p_light_col = pos_to_mediation(p_light.xyz);
+            //     shadowterm += exp(-shadow * shadowDensity / p_light_col);
+            //     lpos = pos; // return lpos to start for next light
+            //     shadow = 0.; // reset shadow
+            // }
+
+            // shadowterm /= float(num_p_lights);
+
             // combine shadow with density
             density = clamp(dsample * volumeDensity, 0., 1.);
-            vec3 shadowterm = exp(-shadow * shadowDensity / col);
-            vec3 absorbedlight = shadowterm * density;
+            absorbedlight = shadowterm * density;
             energy += absorbedlight * transmittance;
             transmittance *= 1. - density;     
             
             // ambient lighting
-            shadow = 0.;
-            float asample = 0.;
-            for (float s = 0.; s < 1.; s++) {
-                lpos = pos + vec3(0., 0., 0.05 + s * 1.3);
-                asample = volume(lpos);
-                shadow += asample / (0.05 + s * 1.3);
-            }
-
-            energy += exp(-shadow * ALIGHT_DENSITY) * density * col * transmittance;
+            energy += ALIGHT_POW * density * ALIGHT_COL * transmittance;
         }
 
         pos += ray * stepLength;

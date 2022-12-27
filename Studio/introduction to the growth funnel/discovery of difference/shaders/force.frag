@@ -26,7 +26,7 @@ void main()
 			vec3 other_pos = texelFetch(sTD2DInputs[0], ivec2(x, y), 0).rgb;
           	float spring_length = texelFetch(sTD2DInputs[1], ivec2(mod(index, 32.), mod(index, 32.)), 0).r;
 
-			// some useful values
+			// calculate constants values
 			vec3 offset = other_pos - pos;
 			float dist = length(offset) + 0.01;
            	vec3 dir = normalize(offset);
@@ -45,7 +45,7 @@ void main()
 
 
 	// attract to center
-    float center_strength = 10.85;
+    float center_strength = 19.85;
     vec3 dir_center = -1. * normalize(pos);
     force += dir_center * center_strength;
 
