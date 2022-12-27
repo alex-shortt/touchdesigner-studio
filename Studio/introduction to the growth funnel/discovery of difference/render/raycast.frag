@@ -44,8 +44,10 @@ float noise( in vec3 x ) {
 float fbm( vec3 p ) {
     float f;
     f  = 0.5000*noise( p ); p = m*p*2.02;
-    f += 0.2500*noise( p ); p = m*p*2.03;
-    f += 0.12500*noise( p ); p = m*p*2.01;
+    f += 0.2500*noise( p ); 
+    p = m*p*2.03;
+    f += 0.12500*noise( p ); 
+    p = m*p*2.01;
     f += 0.06250*noise( p );
     return f;
 }
@@ -135,12 +137,33 @@ const float max_chroma = 0.33;
 #define FOG_FAR 40.
 
 #define ALIGHT_COL vec3(1.)
-#define ALIGHT_POW 0.4
+#define ALIGHT_POW 0.2
 
-int num_p_lights = 2;
-vec4 p_lights[2] = vec4[](vec4(2.2, -1.5, 0.9, .7), vec4(-1., 0.9, 0., 0.9));
+#define RENDER_P_LIGHTS 1
+#define NUM_P_LIGHTS 2
+vec4 p_lights[NUM_P_LIGHTS] = vec4[](vec4(2.2, -0.5, 1.9, 1.9), vec4(-1., 0.9, 0., 0.9));
+
+#define MAX_IDEAS 100
+vec3 idea_values[MAX_IDEAS];
 
 float jitter;
+
+
+vec3 get_idea_value(int index){
+  return idea_values[index];
+}
+
+void read_idea_values() {
+    vec2 uv;
+    float side_len = floor(sqrt(num_ideas));
+    for(float x = 0; x < side_len; x++) {
+        for(float y = 0; y < side_len; y++) {
+            uv.x = (x + 0.1) / side_len;
+            uv.y = (y + 0.1) / side_len;
+            idea_values[int(x*side_len + y)] = texture(sTD2DInputs[0], uv).rgb;
+        }
+    }
+}
 
 vec3 pos_to_mediation(vec3 p) {
     float theta = atan(p.z, p.x);
@@ -154,7 +177,9 @@ vec3 pos_to_mediation(vec3 p) {
     vec3 lab = vec3(L, a, b);
     vec3 rgb = linear_srgb_from_oklab(lab);
     rgb = clamp(rgb, 0.0, 1.);
-    return srgb_from_linear_srgb(rgb);
+    vec3 col = srgb_from_linear_srgb(rgb);
+    if(length(col) > 1.) return normalize(col);
+    return col;
 }
 
 // returns (color, depth)
@@ -162,29 +187,23 @@ float volume( vec3 p )
 {
     // get noise value
     float t = time * 0.925;
-    
-    float noise_scale = 2.5;
 
-    vec3 q = 0.4 * ((p * noise_scale) - vec3(0., 0., 1.0) * t);
-    float f = fbm(q);
-
-    float d, dist, rad, MAX_RAD = 0.225;
-    vec2 uv;
-    vec3 tex, idea_pos;
+    float d, dist, rad, MAX_RAD = 0.175;
+    vec3 idea_pos;
 
     float side_len = floor(sqrt(num_ideas));
-    for(float x = 0; x < side_len; x++) {
-        for(float y = 0; y < side_len; y++) {
-            uv = vec2(x + 0.1, y + 0.1) / vec2(side_len);
-            tex = texture(sTD2DInputs[0], uv).rgb;
-            idea_pos = tex.xyz;
+    for(int i = 0; i < num_ideas; i++) {
+        float noise_scale = 1. + pow(hash(i), 2.)*15.; //12.5;
+        vec3 q = 0.4 * ((p * noise_scale) - vec3(hash(i)*2.-1., hash(i + 1)*2.-1., hash(i+2)*2.-1.) * t);
+        float f = fbm(q);
 
-            dist = clamp(length(p - idea_pos), -100., 100.); // not sure why but clamp fixes things
-            rad = dist / MAX_RAD;
-            rad += (f - 0.5) * 14.;
-            rad = clamp(rad, 0., 1.);
-            d += pow((1. - rad), 1.) * f;
-        }
+        idea_pos = get_idea_value(i);
+
+        dist = clamp(length(p - idea_pos), -100., 100.); // not sure why but clamp fixes things
+        rad = dist / MAX_RAD;
+        rad += (f - 0.5) * 14.;
+        rad = clamp(rad, 0., 1.);
+        d += pow((1. - rad), 1.) * f;
     }
 
     // apply fog
@@ -194,6 +213,32 @@ float volume( vec3 p )
     return d;
 }
 
+float shadow, shadowDensity, p_step_len, p_light_pow, lsample;
+vec3 shadowterm, p_light_offset, p_light_col;
+vec4 p_light;
+void apply_p_light(int index, vec3 lpos) {
+    if(index >= NUM_P_LIGHTS) return;
+    
+    p_light = p_lights[index];
+
+    if(p_light.a <= 0.) return;
+
+    shadow = 0.;
+
+    p_light_offset = p_light.xyz - lpos;
+    p_step_len = length(p_light_offset) / float(SHA_STEPS);
+    for (int s = 0; s < SHA_STEPS; s += 1) {
+        lpos += p_light_offset / float(SHA_STEPS);
+        p_light_pow = p_light.a / pow(float(s) * p_step_len, 2.);
+        lsample = volume(lpos);
+        shadow += lsample * clamp(p_light_pow * 0.000001, 0., 1.);
+    }
+
+    shadowDensity = clamp(SHA_DENSITY * p_step_len, 0., 1.);
+    p_light_col = pos_to_mediation(p_light.xyz);
+    shadowterm += exp(-shadow * shadowDensity / p_light_col);
+}
+
 vec4 raymarchVolume(vec3 origin, vec3 ray) {
     float stepLength = VOL_LENGTH / float(VOL_STEPS);
     float volumeDensity = VOL_DENSITY * stepLength;
@@ -201,47 +246,24 @@ vec4 raymarchVolume(vec3 origin, vec3 ray) {
     float density = 0.;
     float transmittance = 1.;
     vec3 energy = vec3(0.);
-    float shadowDensity;
     vec3 pos = origin + ray * jitter * stepLength;
-
-    float shadow, p_step_len, p_light_pow, lsample;
-    vec3 absorbedlight, shadowterm, p_light_offset, p_light_col;
-    vec4 p_light;
+    vec3 absorbedlight;
     
     // raymarch
     for (int i = 0; i < VOL_STEPS; i++) {
         float dsample = volume(pos);
         
-        if(transmittance < 0.0001) break;
+        if(transmittance < 0.001) break;
 
-        if (dsample > 0.00001) {
-            vec3 lpos = pos;
-
+        if (dsample > 0.0001) {
+            #if RENDER_P_LIGHTS
             // raymarch shadows from each point light
-            shadow = 0.;
             shadowterm = vec3(0.);
-            // for(int l = 0; l < num_p_lights; l++) {
-            //     p_light = p_lights[l];
+            // apply_p_light(0, pos);
+            // apply_p_light(1, pos);
 
-            //     if(p_light.a <= 0.) continue;
-
-            //     p_light_offset = p_light.xyz - lpos;
-            //     p_step_len = length(p_light_offset) / float(SHA_STEPS);
-            //     for (float s = 0; s < SHA_STEPS; s += 1.) {
-            //         lpos += p_light_offset / float(SHA_STEPS);
-            //         p_light_pow = p_light.a / pow(s * p_step_len, 2.);
-            //         lsample = volume(lpos);
-            //         shadow += 1. / p_light_pow * lsample;
-            //     }
-
-            //     shadowDensity = SHA_DENSITY * p_step_len;
-            //     p_light_col = pos_to_mediation(p_light.xyz);
-            //     shadowterm += exp(-shadow * shadowDensity / p_light_col);
-            //     lpos = pos; // return lpos to start for next light
-            //     shadow = 0.; // reset shadow
-            // }
-
-            // shadowterm /= float(num_p_lights);
+            shadowterm /= float(NUM_P_LIGHTS);
+            #endif
 
             // combine shadow with density
             density = clamp(dsample * volumeDensity, 0., 1.);
@@ -255,9 +277,10 @@ vec4 raymarchVolume(vec3 origin, vec3 ray) {
 
         pos += ray * stepLength;
     }
-    
+
     return vec4(energy, transmittance);
 }
+
 
 
 void main()
@@ -270,15 +293,15 @@ void main()
     vec3 viewDir = rayDirection(fov+FOV_OFFSET, resolution, fragCoord);
     mat3 viewToWorld = viewMatrix(cam_pos, cam_look, vec3(0,1,0));
     vec3 ray = viewToWorld * viewDir;
-    
-    // jitter = 0.1 * hash(cam_pos.x + cam_pos.y * 24. + time*0.05);
+
+    // load in idea values from texture for this frame
+    read_idea_values();
+
+    jitter = 0.1 * hash(cam_pos.x + cam_pos.y * 24. + time*0.05);
     vec4 col = raymarchVolume(cam_pos, ray);
     
     // Output to screen
-    vec3 top_col = vec3(1.);
-    vec3 bot_col = vec3(1.);
-    vec3 bg = mix(top_col, bot_col, cam_pos.y - 0.55);
-
+    vec3 bg = vec3(1.);
     vec3 result = mix(col.rgb,  vec3(1.),  col.a);
     fragColor = vec4(result, 1.);
 }
