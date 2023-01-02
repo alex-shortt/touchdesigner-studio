@@ -16,13 +16,10 @@ num_day_lookup = {}
 # pretty name :: path
 path_lookup = {}
 
-# find double bracket wiki link
-
 
 def get_links(text):
-    matches = re.findall('\[\[.*?\]\]', text)
-    num_matches = len(matches)
     words = []
+    matches = re.findall('\[\[.*?\]\]', text)
     for match in matches:
         words.append(match.replace("[[", "").replace("]]", "").split("|")[0])
 

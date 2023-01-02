@@ -1,0 +1,1460 @@
+"dashboard","dashboard",23,3,1,1
+"metaphysics","01_metaphysics/metaphysics",1900,279,13,7
+"subset","01_metaphysics/_0/subset",112,12,2,2
+"fundamental","01_metaphysics/_0/fundamental",523,71,11,8
+"quality","01_metaphysics/_0/quality",119,10,4,4
+"idea","01_metaphysics/_0/idea",641,75,17,10
+"set","01_metaphysics/_0/set",85,12,3,3
+"exist","01_metaphysics/_0/exist",357,51,8,7
+"substrate","01_metaphysics/_0/substrate",25,5,0,0
+"measure","01_metaphysics/_0/measure",159,17,5,5
+"experience","01_metaphysics/_0/experience",365,39,12,10
+"center","01_metaphysics/_0/center",231,27,6,6
+"information","01_metaphysics/_1/information",410,52,10,9
+"difference","01_metaphysics/_1/difference",88,8,2,2
+"efficiency","01_metaphysics/derived/quality/efficiency",287,30,7,5
+"abstract","01_metaphysics/derived/quality/abstract",173,15,4,4
+"intelligence","01_metaphysics/derived/quality/intelligence",485,67,9,8
+"spacetime","01_metaphysics/derived/framework/spacetime",292,33,8,8
+"creature","01_metaphysics/derived/entity/creature",181,15,6,5
+"novel idea","01_metaphysics/derived/idea/novel idea",146,17,4,4
+"space is discrete","01_metaphysics/derived/proposition/space is discrete",32,4,2,2
+"space is continuous","01_metaphysics/derived/proposition/space is continuous",46,4,2,2
+"universes are simulated","01_metaphysics/derived/proposition/universes are simulated",58,4,2,2
+"the universe is deterministic","01_metaphysics/derived/proposition/the universe is deterministic",44,5,2,2
+"ideas are the fundamental substrate of our reality","01_metaphysics/derived/proposition/ideas are the fundamental substrate of our reality",205,21,7,5
+"polyrealism","01_metaphysics/derived/proposition/polyrealism",54,6,3,3
+"virtual reality","01_metaphysics/derived/reality/virtual reality",138,11,4,3
+"primary reality","01_metaphysics/derived/reality/primary reality",107,14,3,3
+"fundamental reality","01_metaphysics/derived/reality/fundamental reality",153,14,7,6
+"mathematical reality","01_metaphysics/derived/reality/mathematical reality",144,14,6,6
+"ideal reality","01_metaphysics/derived/reality/ideal reality",622,77,19,10
+"digital reality","01_metaphysics/derived/reality/digital reality",106,9,2,2
+"conscious entity reality","01_metaphysics/derived/reality/conscious entity reality",132,13,5,5
+"physical reality","01_metaphysics/derived/reality/physical reality",224,21,9,7
+"thought","01_metaphysics/derived/event/thought",154,19,4,3
+"action","01_metaphysics/derived/event/action",179,18,7,7
+"reality","01_metaphysics/_2/reality",876,104,24,15
+"binary","01_metaphysics/_2/binary",202,28,4,4
+"language","01_metaphysics/chaos/language",70,7,3,3
+"possible","01_metaphysics/chaos/possible",205,20,3,3
+"imply","01_metaphysics/chaos/imply",139,14,3,2
+"entity","01_metaphysics/chaos/entity",871,135,16,14
+"mediation","01_metaphysics/chaos/mediation",302,36,8,7
+"layer","01_metaphysics/chaos/layer",452,56,8,7
+"phenomena","01_metaphysics/chaos/phenomena",215,28,7,7
+"connection","01_metaphysics/chaos/connection",59,5,0,0
+"point","01_metaphysics/chaos/point",342,48,6,4
+"dilemma","01_metaphysics/chaos/dilemma",350,46,7,5
+"velocity","01_metaphysics/chaos/velocity",255,31,13,9
+"representation","01_metaphysics/chaos/representation",84,6,0,0
+"funnel","01_metaphysics/chaos/funnel",367,45,10,6
+"state","01_metaphysics/chaos/state",315,45,9,8
+"function","01_metaphysics/chaos/function",116,11,4,4
+"continuity","01_metaphysics/chaos/continuity",79,5,1,1
+"direction","01_metaphysics/chaos/direction",106,8,3,3
+"manifest","01_metaphysics/chaos/manifest",137,14,3,3
+"fantasy","01_metaphysics/chaos/fantasy",64,8,2,2
+"creation","01_metaphysics/chaos/creation",504,61,12,9
+"imagine","01_metaphysics/chaos/imagine",109,11,3,3
+"purpose","01_metaphysics/chaos/purpose",427,57,9,6
+"existence","01_metaphysics/chaos/existence",120,14,4,3
+"simulation","01_metaphysics/chaos/simulation",442,46,15,7
+"event","01_metaphysics/chaos/event",192,24,7,4
+"world","01_metaphysics/chaos/world",538,64,16,9
+"line segment","01_metaphysics/chaos/line segment",105,12,2,2
+"pattern","01_metaphysics/chaos/pattern",129,10,3,3
+"growth","01_metaphysics/chaos/growth",82,8,1,1
+"specify","01_metaphysics/chaos/specify",146,20,4,3
+"limit","01_metaphysics/chaos/limit",61,9,1,1
+"consciousness","01_metaphysics/chaos/consciousness",138,11,4,4
+"absolute","01_metaphysics/chaos/absolute",69,6,3,3
+"line","01_metaphysics/chaos/line",171,17,4,4
+"latent","01_metaphysics/chaos/latent",63,7,2,2
+"archetype","00_chaos/archetype",29,2,0,0
+"discrete math","00_chaos/discrete math",0,1,0,0
+"neural net","00_chaos/neural net",0,1,0,0
+"long run","00_chaos/long run",39,7,1,1
+"causation","00_chaos/causation",0,1,0,0
+"agent","00_chaos/agent",25,2,0,0
+"ontological definition","00_chaos/ontological definition",250,23,8,6
+"do things that don't scale","00_chaos/do things that don't scale",30,5,1,1
+"burnout","00_chaos/burnout",0,1,0,0
+"something rather than nothing","00_chaos/something rather than nothing",0,1,0,0
+"data structure","00_chaos/data structure",0,1,0,0
+"information source","00_chaos/information source",220,29,7,6
+"ontology","00_chaos/ontology",447,56,9,9
+"causal","00_chaos/causal",40,6,1,1
+"iterate basis","00_chaos/iterate basis",0,1,0,0
+"text","00_chaos/text",0,1,0,0
+"transform","00_chaos/transform",217,23,5,4
+"noise","00_chaos/noise",74,8,3,3
+"Manage Your Day-to-Day","00_chaos/Manage Your Day-to-Day",1158,131,0,0
+"geometry","00_chaos/geometry",40,3,0,0
+"liberty","00_chaos/liberty",50,2,1,1
+"creative","00_chaos/creative",29,2,0,0
+"weed","00_chaos/weed",0,1,0,0
+"fundamental entity","00_chaos/fundamental entity",39,3,0,0
+"prophet","00_chaos/prophet",0,1,0,0
+"input","00_chaos/input",27,2,0,0
+"detail","00_chaos/detail",26,2,0,0
+"communication","00_chaos/communication",178,15,4,4
+"playlist","00_chaos/playlist",0,1,0,0
+"compassion","00_chaos/compassion",67,7,2,2
+"onboarding funnel","00_chaos/onboarding funnel",112,18,3,3
+"societal algorithm","00_chaos/societal algorithm",0,1,0,0
+"object3d","00_chaos/object3d",90,16,1,1
+"innocence","00_chaos/innocence",0,1,0,0
+"spiritual","00_chaos/spiritual",136,11,6,5
+"major","00_chaos/major",0,1,0,0
+"comedy","00_chaos/comedy",55,8,1,1
+"scientist","00_chaos/scientist",86,7,2,2
+"position","00_chaos/position",137,12,5,5
+"journey","00_chaos/journey",176,35,4,4
+"english","00_chaos/english",23,3,1,1
+"god","00_chaos/god",385,51,9,9
+"level","00_chaos/level",128,13,4,4
+"markdown","00_chaos/markdown",56,11,0,0
+"share","00_chaos/share",135,12,3,2
+"change of purpose","00_chaos/change of purpose",0,1,0,0
+"trust","00_chaos/trust",0,1,0,0
+"filter","00_chaos/filter",47,4,0,0
+"learning algorithm","00_chaos/learning algorithm",38,3,0,0
+"suffering","00_chaos/suffering",0,1,0,0
+"find","00_chaos/find",118,12,4,4
+"libido","00_chaos/libido",18,2,2,2
+"religion","00_chaos/religion",28,2,0,0
+"music theory","00_chaos/music theory",16,2,1,1
+"The Subtle Art of Not Giving a Fck","00_chaos/The Subtle Art of Not Giving a Fck",8051,927,0,0
+"personal plan","00_chaos/personal plan",81,15,2,2
+"product","00_chaos/product",0,1,0,0
+"process","00_chaos/process",90,12,1,1
+"muse-universe","00_chaos/muse-universe",12,3,0,0
+"blockchain","00_chaos/blockchain",0,1,0,0
+"qualia","00_chaos/qualia",127,11,4,4
+"platos cave","00_chaos/platos cave",139,26,5,4
+"cs180","00_chaos/cs180",4937,648,1,1
+"complete","00_chaos/complete",173,20,3,3
+"storytelling","00_chaos/storytelling",74,6,2,2
+"minimal","00_chaos/minimal",142,13,5,5
+"instagram","00_chaos/instagram",0,1,0,0
+"experiential algorithm","00_chaos/experiential algorithm",191,31,3,3
+"general_2022-09-02-22_21.excalidraw","00_chaos/general_2022-09-02-22_21.excalidraw",46256,146,0,0
+"assume","00_chaos/assume",131,11,2,2
+"behaviorism","00_chaos/behaviorism",2189,458,15,9
+"probability","00_chaos/probability",0,1,0,0
+"quarantine","00_chaos/quarantine",354,63,0,0
+"fundamental consciousness","00_chaos/fundamental consciousness",0,1,0,0
+"convey","00_chaos/convey",0,1,0,0
+"war","00_chaos/war",53,7,1,1
+"eliminativism","00_chaos/eliminativism",466,104,4,2
+"divine","00_chaos/divine",0,1,0,0
+"program","00_chaos/program",38,4,2,2
+"secondary quality","00_chaos/secondary quality",117,10,3,3
+"interpolate","00_chaos/interpolate",100,11,2,2
+"descartes' first meditation","00_chaos/descartes' first meditation",158,22,3,3
+"faith","00_chaos/faith",34,5,1,1
+"theory of everything","00_chaos/theory of everything",97,11,4,4
+"vector space","00_chaos/vector space",0,1,0,0
+"good","00_chaos/good",169,23,5,5
+"zen","00_chaos/zen",25,2,0,0
+"euclid","00_chaos/euclid",621,124,3,2
+"science","00_chaos/science",62,8,3,3
+"live","00_chaos/live",95,8,3,3
+"family","00_chaos/family",72,9,2,2
+"see another perspective","00_chaos/see another perspective",0,1,0,0
+"visual","00_chaos/visual",92,7,0,0
+"app","00_chaos/app",0,1,0,0
+"dopamine","00_chaos/dopamine",0,1,0,0
+"environment","00_chaos/environment",31,2,0,0
+"learn","00_chaos/learn",129,14,3,2
+"natural algorithm","00_chaos/natural algorithm",0,1,0,0
+"mediated world","00_chaos/mediated world",70,5,2,2
+"network","00_chaos/network",0,1,0,0
+"generative","00_chaos/generative",0,1,0,0
+"delta","00_chaos/delta",25,2,0,0
+"architecture","00_chaos/architecture",67,10,0,0
+"structure","00_chaos/structure",0,1,0,0
+"naturalism","00_chaos/naturalism",160,28,2,2
+"incompleteness theorem","00_chaos/incompleteness theorem",496,60,17,11
+"worldbuilding","00_chaos/worldbuilding",205,16,2,2
+"visual entity","00_chaos/visual entity",90,9,3,3
+"hue","00_chaos/hue",0,1,0,0
+"pansychism","00_chaos/pansychism",185,25,3,3
+"idea space","00_chaos/idea space",45,5,2,2
+"work","00_chaos/work",127,15,5,5
+"interpretation","00_chaos/interpretation",28,2,0,0
+"the french dispatch","00_chaos/the french dispatch",0,1,0,0
+"initial","00_chaos/initial",37,9,1,1
+"machine","00_chaos/machine",112,11,3,3
+"physics","00_chaos/physics",69,7,2,2
+"inspect","00_chaos/inspect",30,2,0,0
+"brain","00_chaos/brain",0,1,0,0
+"theory","00_chaos/theory",0,1,0,0
+"westmont college","00_chaos/westmont college",59,6,2,2
+"relative","00_chaos/relative",29,2,0,0
+"step","00_chaos/step",183,19,7,7
+"cliche","00_chaos/cliche",0,1,0,0
+"digital moments","00_chaos/digital moments",75,6,2,2
+"result","00_chaos/result",80,7,2,2
+"obsidian graph","00_chaos/obsidian graph",19,4,0,0
+"sacrifice","00_chaos/sacrifice",142,16,4,4
+"eye contact","00_chaos/eye contact",0,1,0,0
+"formal system","00_chaos/formal system",17,2,1,1
+"oral","00_chaos/oral",97,7,3,3
+"euclidian distance","00_chaos/euclidian distance",0,1,0,0
+"stone tossing","00_chaos/stone tossing",223,38,5,5
+"meaning","00_chaos/meaning",228,23,9,9
+"dj","00_chaos/dj",54,5,2,2
+"360 video","00_chaos/360 video",61,7,1,1
+"conway's game of life","00_chaos/conway's game of life",0,1,0,0
+"causal structure","00_chaos/causal structure",264,29,6,6
+"stress","00_chaos/stress",14,2,1,1
+"model","00_chaos/model",25,2,0,0
+"delay of gratification","00_chaos/delay of gratification",100,11,4,4
+"scientific realism","00_chaos/scientific realism",170,27,2,2
+"energy","00_chaos/energy",0,1,0,0
+"rpg","00_chaos/rpg",23,3,1,1
+"self","00_chaos/self",109,10,4,4
+"platform","00_chaos/platform",0,1,0,0
+"music","00_chaos/music",197,14,7,6
+"builder","00_chaos/builder",0,1,0,0
+"relative center","00_chaos/relative center",0,1,0,0
+"uncertainty","00_chaos/uncertainty",19,3,1,1
+"personal axiom","00_chaos/personal axiom",1445,201,6,5
+"propagation","00_chaos/propagation",31,2,0,0
+"basis algorithm","00_chaos/basis algorithm",61,9,3,3
+"the big bang","00_chaos/the big bang",0,1,0,0
+"muse story","00_chaos/muse story",100,12,5,5
+"village","00_chaos/village",6,1,0,0
+"god's creation","00_chaos/god's creation",61,7,2,2
+"spain flight","00_chaos/spain flight",52,11,0,0
+"personal website","00_chaos/personal website",0,1,0,0
+"voxel","00_chaos/voxel",92,10,4,4
+"twitter","00_chaos/twitter",0,1,0,0
+"SDF","00_chaos/SDF",32,3,2,2
+"buddhism","00_chaos/buddhism",0,1,0,0
+"fundamental substrate","00_chaos/fundamental substrate",0,1,0,0
+"everything everywhere all at once","00_chaos/everything everywhere all at once",24,2,0,0
+"dilemma tattoo","00_chaos/dilemma tattoo",82,14,2,2
+"wonder","00_chaos/wonder",78,8,4,4
+"ceo","00_chaos/ceo",0,1,0,0
+"society","00_chaos/society",151,14,5,5
+"life","00_chaos/life",207,18,8,8
+"motif","00_chaos/motif",35,4,1,1
+"problem","00_chaos/problem",114,13,2,2
+"rule","00_chaos/rule",91,6,2,2
+"context","00_chaos/context",97,9,3,3
+"community","00_chaos/community",96,10,4,4
+"find balance","00_chaos/find balance",43,7,1,1
+"upper body routine","00_chaos/upper body routine",1229,64,4,4
+"content","00_chaos/content",0,1,0,0
+"isomorphism","00_chaos/isomorphism",79,10,3,3
+"observe","00_chaos/observe",26,2,0,0
+"inevitable","00_chaos/inevitable",53,4,1,1
+"success","00_chaos/success",25,4,1,1
+"form","00_chaos/form",0,1,0,0
+"founder","00_chaos/founder",175,15,4,3
+"nerve","00_chaos/nerve",227,34,2,2
+"condition","00_chaos/condition",143,15,5,5
+"phil100d","00_chaos/phil100d",6286,1687,22,18
+"token-functionalism","00_chaos/token-functionalism",489,95,2,2
+"discomfort","00_chaos/discomfort",43,5,2,2
+"lust","00_chaos/lust",126,16,6,5
+"product design","00_chaos/product design",22,2,2,2
+"rain","00_chaos/rain",18,3,0,0
+"bad","00_chaos/bad",37,4,2,2
+"russia attack on ukraine","00_chaos/russia attack on ukraine",171,23,2,2
+"personal","00_chaos/personal",270,31,8,7
+"mental model","00_chaos/mental model",0,1,0,0
+"basis purpose","00_chaos/basis purpose",32,5,2,2
+"consumption","00_chaos/consumption",43,6,3,3
+"eyes","00_chaos/eyes",0,1,0,0
+"entropy","00_chaos/entropy",0,1,0,0
+"personal delivery","00_chaos/personal delivery",1425,211,15,12
+"power","00_chaos/power",114,12,2,2
+"salesman","00_chaos/salesman",0,1,0,0
+"basis implemented","00_chaos/basis implemented",0,1,0,0
+"The Selfish Gene","00_chaos/The Selfish Gene",7168,856,0,0
+"running","00_chaos/running",41,5,2,2
+"effect","00_chaos/effect",100,11,3,3
+"finite state machine","00_chaos/finite state machine",0,1,0,0
+"cult","00_chaos/cult",80,10,3,3
+"plane","00_chaos/plane",0,1,0,0
+"image","00_chaos/image",38,3,1,1
+"compare","00_chaos/compare",90,10,2,2
+"complex","00_chaos/complex",209,30,6,6
+"calm","00_chaos/calm",54,6,3,3
+"trinity","00_chaos/trinity",78,10,3,3
+"propositional calculus","00_chaos/propositional calculus",632,106,3,3
+"diversity","00_chaos/diversity",0,1,0,0
+"tool","00_chaos/tool",43,6,0,0
+"momentum","00_chaos/momentum",71,12,1,1
+"sense","00_chaos/sense",66,5,2,2
+"love","00_chaos/love",123,18,3,3
+"plagiarize","00_chaos/plagiarize",31,2,0,0
+"span","00_chaos/span",24,2,0,0
+"gratification","00_chaos/gratification",87,11,4,3
+"quark","00_chaos/quark",25,2,0,0
+"iceland","00_chaos/iceland",0,1,0,0
+"mad max","00_chaos/mad max",0,1,0,0
+"video","00_chaos/video",0,1,0,0
+"orphan","00_chaos/orphan",118,13,2,2
+"routine v1","00_chaos/routine v1",883,122,0,0
+"balance","00_chaos/balance",118,13,4,4
+"obscure","00_chaos/obscure",28,2,0,0
+"pixel","00_chaos/pixel",52,7,2,2
+"physical","00_chaos/physical",0,1,0,0
+"meditation","00_chaos/meditation",63,5,0,0
+"personal kpis","00_chaos/personal kpis",55,8,2,2
+"area","00_chaos/area",0,1,0,0
+"Measure What Matters","00_chaos/Measure What Matters",2126,225,0,0
+"reconcile","00_chaos/reconcile",153,12,4,4
+"camping","00_chaos/camping",0,1,0,0
+"technology","00_chaos/technology",0,1,0,0
+"hope","00_chaos/hope",26,2,0,0
+"traversable","00_chaos/traversable",108,20,2,2
+"decentralization","00_chaos/decentralization",0,1,0,0
+"explaining exactly what i am doing","00_chaos/explaining exactly what i am doing",0,1,0,0
+"in the long run, stories win","00_chaos/in the long run, stories win",42,6,2,2
+"information transfer represented as light","00_chaos/information transfer represented as light",124,9,3,3
+"holy spirit","00_chaos/holy spirit",0,1,0,0
+"listener","00_chaos/listener",86,9,3,3
+"compute","00_chaos/compute",0,1,0,0
+"beach show","00_chaos/beach show",663,105,1,1
+"contention","00_chaos/contention",7,1,0,0
+"focus","00_chaos/focus",35,3,0,0
+"monism","00_chaos/monism",792,160,4,2
+"social media","00_chaos/social media",0,1,0,0
+"emma's birthday","00_chaos/emma's birthday",114,17,1,1
+"ukraine","00_chaos/ukraine",0,1,0,0
+"purpose hierarchy","00_chaos/purpose hierarchy",155,17,5,5
+"obsess","00_chaos/obsess",0,1,0,0
+"hypergraph","00_chaos/hypergraph",344,24,2,2
+"sin","00_chaos/sin",0,1,0,0
+"union","00_chaos/union",47,5,1,1
+"dimension","00_chaos/dimension",42,3,0,0
+"final state","00_chaos/final state",40,9,1,1
+"inspiration comes in the moment","00_chaos/inspiration comes in the moment",35,5,1,1
+"roam research","00_chaos/roam research",119,8,2,2
+"3d internet","00_chaos/3d internet",0,1,0,0
+"necessary truth","00_chaos/necessary truth",0,1,0,0
+"reflect","00_chaos/reflect",29,2,0,0
+"start from nothing","00_chaos/start from nothing",0,1,0,0
+"personal algorithm","00_chaos/personal algorithm",221,26,4,4
+"pain","00_chaos/pain",107,11,5,5
+"yc","00_chaos/yc",31,3,0,0
+"nfa","00_chaos/nfa",23,2,0,0
+"responsibility","00_chaos/responsibility",185,22,8,6
+"data","00_chaos/data",0,1,0,0
+"psychedelic","00_chaos/psychedelic",32,2,0,0
+"general","00_chaos/general",151,15,5,3
+"survive","00_chaos/survive",0,1,0,0
+"digital","00_chaos/digital",30,2,0,0
+"causal pattern","00_chaos/causal pattern",74,5,2,2
+"etymology","00_chaos/etymology",26,4,1,1
+"canvas","00_chaos/canvas",170,23,5,4
+"An Introduction to Information Theory","00_chaos/An Introduction to Information Theory",7278,937,0,0
+"sweden","00_chaos/sweden",0,1,0,0
+"windmill","00_chaos/windmill",28,2,0,0
+"github","00_chaos/github",0,1,0,0
+"layer of reality","00_chaos/layer of reality",80,8,2,2
+"basis iterate","00_chaos/basis iterate",623,106,7,7
+"basis journal","00_chaos/basis journal",25,4,0,0
+"goal","00_chaos/goal",104,7,3,3
+"touch designer","00_chaos/touch designer",31,3,2,2
+"perception","00_chaos/perception",0,1,0,0
+"Zero to One","00_chaos/Zero to One",9328,1012,0,0
+"stream of consciousness","00_chaos/stream of consciousness",0,1,0,0
+"judaism","00_chaos/judaism",98,9,4,2
+"contradiction","00_chaos/contradiction",171,22,3,2
+"catholicism","00_chaos/catholicism",69,7,2,2
+"parke-taylor formula","00_chaos/parke-taylor formula",44,1,0,0
+"polycam","00_chaos/polycam",66,9,2,2
+"early muse","00_chaos/early muse",0,1,0,0
+"emotion","00_chaos/emotion",148,14,5,5
+"space","00_chaos/space",110,13,3,2
+"relate","00_chaos/relate",50,4,0,0
+"kpi","00_chaos/kpi",61,5,1,1
+"perform","00_chaos/perform",106,11,3,2
+"patience","00_chaos/patience",138,13,4,4
+"stable diffusion","00_chaos/stable diffusion",19,3,2,2
+"simulated basis","00_chaos/simulated basis",0,1,0,0
+"gene","00_chaos/gene",24,2,0,0
+"value","00_chaos/value",140,17,4,4
+"logos","00_chaos/logos",0,1,0,0
+"earth","00_chaos/earth",23,3,1,1
+"economics","00_chaos/economics",28,2,0,0
+"personal reality","00_chaos/personal reality",67,7,3,3
+"viral","00_chaos/viral",0,1,0,0
+"important","00_chaos/important",42,3,0,0
+"The Hard Thing About Hard Things","00_chaos/The Hard Thing About Hard Things",8666,1171,0,0
+"composition","00_chaos/composition",77,9,3,3
+"math","00_chaos/math",46,3,0,0
+"placebo","00_chaos/placebo",0,1,0,0
+"culture","00_chaos/culture",90,7,3,3
+"hell","00_chaos/hell",133,12,6,6
+"doubt","00_chaos/doubt",70,10,3,3
+"information theory","00_chaos/information theory",0,1,0,0
+"nothing","00_chaos/nothing",0,1,0,0
+"worries","00_chaos/worries",0,1,0,0
+"future","00_chaos/future",68,9,3,3
+"raymarch","00_chaos/raymarch",287,34,11,10
+"The Right Side of History","00_chaos/The Right Side of History",1522,154,0,0
+"cs165b","00_chaos/cs165b",0,1,0,0
+"abstract space","00_chaos/abstract space",0,1,0,0
+"obsidian","00_chaos/obsidian",11,3,0,0
+"transitive","00_chaos/transitive",0,1,0,0
+"analogy","00_chaos/analogy",116,12,3,3
+"solve","00_chaos/solve",24,2,0,0
+"causal power","00_chaos/causal power",587,135,6,4
+"complementary","00_chaos/complementary",0,1,0,0
+"manage","00_chaos/manage",0,1,0,0
+"birth","00_chaos/birth",0,1,0,0
+"strange loop","00_chaos/strange loop",68,13,1,1
+"lowercase","00_chaos/lowercase",0,1,0,0
+"spotify","00_chaos/spotify",21,3,2,2
+"free market","00_chaos/free market",0,1,0,0
+"developer","00_chaos/developer",106,9,4,4
+"hospitality","00_chaos/hospitality",108,12,5,5
+"3d","00_chaos/3d",78,14,0,0
+"doom scrolling","00_chaos/doom scrolling",271,42,2,2
+"engage","00_chaos/engage",27,2,0,0
+"logic map","00_chaos/logic map",1142,167,12,6
+"muse graph","00_chaos/muse graph",22,3,2,2
+"markov principle","00_chaos/markov principle",116,18,1,1
+"joshua tree","00_chaos/joshua tree",0,1,0,0
+"primary quality","00_chaos/primary quality",112,8,3,3
+"reward","00_chaos/reward",0,1,0,0
+"TODO","00_chaos/TODO",3,2,0,0
+"simple","00_chaos/simple",0,1,0,0
+"mad libs","00_chaos/mad libs",0,1,0,0
+"london","00_chaos/london",6,2,0,0
+"entertain","00_chaos/entertain",29,2,0,0
+"styleGAN","00_chaos/styleGAN",24,5,1,1
+"jungle","00_chaos/jungle",0,1,0,0
+"resolution","00_chaos/resolution",0,1,0,0
+"climate","00_chaos/climate",0,1,0,0
+"3d model","00_chaos/3d model",41,4,1,1
+"projection","00_chaos/projection",0,1,0,0
+"attract","00_chaos/attract",27,2,0,0
+"self conscious","00_chaos/self conscious",118,16,5,5
+"hsv","00_chaos/hsv",1824,382,10,9
+"kairos","00_chaos/kairos",0,1,0,0
+"art piece","00_chaos/art piece",353,84,1,1
+"pixel stream","00_chaos/pixel stream",0,1,0,0
+"critic","00_chaos/critic",109,9,3,3
+"santa barbara","00_chaos/santa barbara",0,1,0,0
+"muse-reality","00_chaos/muse-reality",12,3,0,0
+"simulacra","00_chaos/simulacra",0,1,0,0
+"sunday session","00_chaos/sunday session",87,12,1,1
+"the west","00_chaos/the west",0,1,0,0
+"upper body","00_chaos/upper body",71,10,1,1
+"2d","00_chaos/2d",0,1,0,0
+"instruction","00_chaos/instruction",118,7,4,4
+"isla vista","00_chaos/isla vista",0,1,0,0
+"artifact","00_chaos/artifact",28,2,0,0
+"home","00_chaos/home",0,1,0,0
+"studio","00_chaos/studio",38,5,2,2
+"government","00_chaos/government",0,1,0,0
+"three.js","00_chaos/three.js",54,7,2,2
+"survival","00_chaos/survival",0,1,0,0
+"travel","00_chaos/travel",0,1,0,0
+"causal connection","00_chaos/causal connection",139,14,4,3
+"latent space","00_chaos/latent space",0,1,0,0
+"answer","00_chaos/answer",79,8,1,1
+"pressure","00_chaos/pressure",0,1,0,0
+"qualitative fact","00_chaos/qualitative fact",120,22,1,1
+"storyteller","00_chaos/storyteller",31,2,0,0
+"signal","00_chaos/signal",78,4,2,2
+"culture war","00_chaos/culture war",70,6,2,2
+"body","00_chaos/body",0,1,0,0
+"diagram","00_chaos/diagram",0,1,0,0
+"reconstruction","00_chaos/reconstruction",124,18,4,4
+"species","00_chaos/species",0,1,0,0
+"ant pathfinding","00_chaos/ant pathfinding",0,1,0,0
+"company","00_chaos/company",0,1,0,0
+"invisible hand","00_chaos/invisible hand",89,14,3,3
+"ucsb","00_chaos/ucsb",79,9,0,0
+"artificial intelligence","00_chaos/artificial intelligence",0,1,0,0
+"computer science","00_chaos/computer science",0,1,0,0
+"infinite","00_chaos/infinite",41,3,0,0
+"version","00_chaos/version",114,13,5,4
+"portal","00_chaos/portal",0,1,0,0
+"hellin drum circles","00_chaos/hellin drum circles",0,1,0,0
+"perspective","00_chaos/perspective",0,1,0,0
+"shader","00_chaos/shader",0,1,0,0
+"values","00_chaos/values",269,40,4,4
+"muse-stories","00_chaos/muse-stories",116,9,2,2
+"semantic","00_chaos/semantic",87,8,2,2
+"sunday bren session","00_chaos/sunday bren session",79,9,2,2
+"token","00_chaos/token",74,18,1,1
+"mental","00_chaos/mental",0,1,0,0
+"sunnyvale","00_chaos/sunnyvale",25,2,2,2
+"local minima","00_chaos/local minima",0,1,0,0
+"Quick Capture","00_chaos/Quick Capture",0,1,0,0
+"journal","00_chaos/journal",78,11,0,0
+"children","00_chaos/children",30,3,0,0
+"person","00_chaos/person",73,7,2,2
+"it takes a long time to create every layer","00_chaos/it takes a long time to create every layer",426,66,4,4
+"tragedy","00_chaos/tragedy",35,4,1,1
+"timeline","00_chaos/timeline",0,1,0,0
+"organize obsidian","00_chaos/organize obsidian",1876,295,15,11
+"mouth","00_chaos/mouth",15,3,1,1
+"vector","00_chaos/vector",93,5,2,2
+"color","00_chaos/color",0,1,0,0
+"automata","00_chaos/automata",0,1,0,0
+"empiricism","00_chaos/empiricism",131,12,4,4
+"alias","00_chaos/alias",303,43,10,3
+"universal law","00_chaos/universal law",33,3,0,0
+"societal reality","00_chaos/societal reality",68,6,3,3
+"personal site","00_chaos/personal site",0,1,0,0
+"quantize","00_chaos/quantize",128,10,3,3
+"generate","00_chaos/generate",28,2,0,0
+"light","00_chaos/light",499,105,7,7
+"coding","00_chaos/coding",0,1,0,0
+"property","00_chaos/property",1829,410,6,4
+"cloud","00_chaos/cloud",0,1,0,0
+"connect","00_chaos/connect",111,7,3,3
+"object","00_chaos/object",233,33,6,6
+"personal world","00_chaos/personal world",0,1,0,0
+"happiness","00_chaos/happiness",24,2,0,0
+"dnd notes","00_chaos/dnd notes",345,44,1,1
+"cognitive science","00_chaos/cognitive science",0,1,0,0
+"garden","00_chaos/garden",0,1,0,0
+"devil","00_chaos/devil",60,6,3,3
+"post yc","00_chaos/post yc",138,31,3,3
+"category theory","00_chaos/category theory",0,1,0,0
+"deterministic","00_chaos/deterministic",0,1,0,0
+"9 muses","00_chaos/9 muses",19,2,1,1
+"epiphenomenalism","00_chaos/epiphenomenalism",243,36,1,1
+"research","00_chaos/research",515,104,2,2
+"compose","00_chaos/compose",71,5,2,2
+"memory","00_chaos/memory",284,27,9,6
+"induction","00_chaos/induction",154,31,1,1
+"discipline","00_chaos/discipline",30,2,0,0
+"vision","00_chaos/vision",38,4,2,2
+"write","00_chaos/write",140,11,5,4
+"comfort","00_chaos/comfort",93,8,3,3
+"initial condition","00_chaos/initial condition",91,5,2,2
+"smell","00_chaos/smell",37,4,2,2
+"virtual","00_chaos/virtual",0,1,0,0
+"shrooms","00_chaos/shrooms",0,1,0,0
+"russia","00_chaos/russia",0,1,0,0
+"realism","00_chaos/realism",0,1,0,0
+"sympathy","00_chaos/sympathy",14,2,1,1
+"product manager","00_chaos/product manager",0,1,0,0
+"institution","00_chaos/institution",132,17,2,2
+"gpgpu","00_chaos/gpgpu",89,11,1,1
+"similarity","00_chaos/similarity",0,1,0,0
+"inspiration","00_chaos/inspiration",85,7,2,2
+"query","00_chaos/query",103,9,3,3
+"picture","00_chaos/picture",140,16,4,4
+"simulacrum","00_chaos/simulacrum",0,1,0,0
+"santa barbara drive","00_chaos/santa barbara drive",88,17,0,0
+"index","00_chaos/index",23,4,0,0
+"local purpose","00_chaos/local purpose",0,1,0,0
+"hostile brothers","00_chaos/hostile brothers",0,1,0,0
+"muse site","00_chaos/muse site",18,4,1,1
+"ritual","00_chaos/ritual",150,14,4,4
+"curate","00_chaos/curate",130,12,5,5
+"replicating","00_chaos/replicating",0,1,0,0
+"provable","00_chaos/provable",188,19,6,5
+"middle","00_chaos/middle",40,3,2,2
+"16 personalities","00_chaos/16 personalities",262,42,3,3
+"metaphysical reality","00_chaos/metaphysical reality",92,9,3,3
+"retreat center","00_chaos/retreat center",86,10,3,3
+"sound","00_chaos/sound",25,2,0,0
+"image space","00_chaos/image space",84,10,3,3
+"Essentialism","00_chaos/Essentialism",5036,668,0,0
+"micro gestures","00_chaos/micro gestures",0,1,0,0
+"why","00_chaos/why",0,1,0,0
+"markov simulation","00_chaos/markov simulation",54,1,0,0
+"GAN","00_chaos/GAN",81,8,0,0
+"aural 1","00_chaos/aural 1",94,6,3,3
+"specific","00_chaos/specific",293,41,6,5
+"gloom","00_chaos/gloom",17,3,1,1
+"reality theory","00_chaos/reality theory",0,1,0,0
+"symmetry","00_chaos/symmetry",30,2,0,0
+"analytic truth","00_chaos/analytic truth",395,77,2,1
+"saturation","00_chaos/saturation",0,1,0,0
+"personal idols","00_chaos/personal idols",208,52,9,9
+"gluon","00_chaos/gluon",25,2,0,0
+"proposition","00_chaos/proposition",236,33,2,2
+"constraint","00_chaos/constraint",43,3,0,0
+"blind","00_chaos/blind",0,1,0,0
+"frequency","00_chaos/frequency",35,7,1,1
+"sub-reality","00_chaos/sub-reality",227,28,7,5
+"basis published","00_chaos/basis published",0,1,0,0
+"magic","00_chaos/magic",0,1,0,0
+"balanced lust","00_chaos/balanced lust",45,3,2,2
+"probable","00_chaos/probable",0,1,0,0
+"reductionism","00_chaos/reductionism",0,1,0,0
+"animal crossing","00_chaos/animal crossing",0,1,0,0
+"evil","00_chaos/evil",0,1,0,0
+"primary purpose","00_chaos/primary purpose",51,9,1,1
+"lsd","00_chaos/lsd",29,2,1,1
+"talk to users","00_chaos/talk to users",38,5,0,0
+"black hole","00_chaos/black hole",206,38,4,3
+"media","00_chaos/media",0,1,0,0
+"midsommar","00_chaos/midsommar",19,5,0,0
+"sensor","00_chaos/sensor",61,7,3,3
+"deity","00_chaos/deity",81,10,2,2
+"ancestor","00_chaos/ancestor",0,1,0,0
+"funding","00_chaos/funding",0,1,0,0
+"expense","00_chaos/expense",117,11,2,2
+"dj mix","00_chaos/dj mix",45,5,1,1
+"hero's journey","00_chaos/hero's journey",71,5,3,3
+"iterate philosophy","00_chaos/iterate philosophy",419,72,3,3
+"translate","00_chaos/translate",417,56,9,5
+"system","00_chaos/system",101,9,3,3
+"unlock","00_chaos/unlock",295,55,6,6
+"git","00_chaos/git",0,1,0,0
+"double helix","00_chaos/double helix",0,1,0,0
+"bren hall","00_chaos/bren hall",23,4,1,1
+"high","00_chaos/high",0,1,0,0
+"linear algebra","00_chaos/linear algebra",158,7,1,1
+"axis","00_chaos/axis",23,2,0,0
+"distinguish","00_chaos/distinguish",129,12,2,2
+"vector calculus","00_chaos/vector calculus",36,3,2,2
+"perpendicular","00_chaos/perpendicular",0,1,0,0
+"garden of eden","00_chaos/garden of eden",21,4,1,1
+"dau","00_chaos/dau",21,4,0,0
+"greedy algorithm","00_chaos/greedy algorithm",149,19,5,5
+"solve a problem","00_chaos/solve a problem",110,10,3,3
+"fear","00_chaos/fear",0,1,0,0
+"engineer","00_chaos/engineer",71,6,1,1
+"attention","00_chaos/attention",0,1,0,0
+"task","00_chaos/task",0,1,0,0
+"grid","00_chaos/grid",12,1,1,1
+"singularity","00_chaos/singularity",0,1,0,0
+"aural","00_chaos/aural",65,7,0,0
+"master-of-one","00_chaos/master-of-one",0,1,0,0
+"basis simulation","00_chaos/basis simulation",28,3,2,2
+"sensation","00_chaos/sensation",29,2,0,0
+"monetize","00_chaos/monetize",0,1,0,0
+"school","00_chaos/school",0,1,0,0
+"substance","00_chaos/substance",0,1,0,0
+"judeo-christian","00_chaos/judeo-christian",64,8,3,3
+"ideal evolution","00_chaos/ideal evolution",62,8,2,2
+"black","00_chaos/black",0,1,0,0
+"tree","00_chaos/tree",18,3,0,0
+"university","00_chaos/university",31,2,0,0
+"conflict","00_chaos/conflict",55,8,1,1
+"influence","00_chaos/influence",29,2,0,0
+"real","00_chaos/real",72,9,2,2
+"lossy","00_chaos/lossy",84,8,1,1
+"ethic","00_chaos/ethic",26,2,0,0
+"message","00_chaos/message",144,11,3,3
+"ray","00_chaos/ray",136,13,4,4
+"information transfer","00_chaos/information transfer",0,1,0,0
+"basis growth","00_chaos/basis growth",0,1,0,0
+"everything","00_chaos/everything",14,2,1,1
+"cause","00_chaos/cause",212,27,5,4
+"follower","00_chaos/follower",92,9,2,2
+"virtue","00_chaos/virtue",56,5,3,3
+"flow","00_chaos/flow",0,1,0,0
+"4th dimension","00_chaos/4th dimension",0,1,0,0
+"oklab","00_chaos/oklab",0,1,0,0
+"tattoo idea","00_chaos/tattoo idea",37,9,1,1
+"multidisciplinary piece","00_chaos/multidisciplinary piece",1116,432,23,20
+"parent","00_chaos/parent",0,1,0,0
+"context switching","00_chaos/context switching",0,1,0,0
+"dream","00_chaos/dream",75,6,1,1
+"greece","00_chaos/greece",55,6,1,1
+"processing power","00_chaos/processing power",0,1,0,0
+"white","00_chaos/white",0,1,0,0
+"realize","00_chaos/realize",0,1,0,0
+"drug","00_chaos/drug",24,2,0,0
+"bible verse","00_chaos/bible verse",9,1,1,1
+"instinct","00_chaos/instinct",83,6,2,2
+"discrete","00_chaos/discrete",0,1,0,0
+"mother","00_chaos/mother",23,3,2,2
+"human","00_chaos/human",177,18,2,2
+"natural selection","00_chaos/natural selection",0,1,0,0
+"fog","00_chaos/fog",0,1,0,0
+"number theory","00_chaos/number theory",29,5,1,1
+"muse growth","00_chaos/muse growth",92,11,3,3
+"metaplug","00_chaos/metaplug",0,1,0,0
+"iterate twitter art","00_chaos/iterate twitter art",354,63,1,1
+"digital garden","00_chaos/digital garden",34,3,0,0
+"philosophy","00_chaos/philosophy",136,11,4,4
+"random","00_chaos/random",34,3,0,0
+"distance","00_chaos/distance",80,9,3,3
+"popcorn trail","00_chaos/popcorn trail",0,1,0,0
+"DNA","00_chaos/DNA",49,6,3,3
+"hierarchy","00_chaos/hierarchy",77,7,3,3
+"spatial","00_chaos/spatial",0,1,0,0
+"hard drive","00_chaos/hard drive",0,1,0,0
+"debate","00_chaos/debate",0,1,0,0
+"aws","00_chaos/aws",0,1,0,0
+"computer","00_chaos/computer",28,2,0,0
+"calculus","00_chaos/calculus",0,1,0,0
+"grain","00_chaos/grain",31,5,0,0
+"type-functionalism","00_chaos/type-functionalism",922,178,7,3
+"money","00_chaos/money",0,1,0,0
+"vhs camera idea","00_chaos/vhs camera idea",0,1,0,0
+"play","00_chaos/play",105,14,2,2
+"decision","00_chaos/decision",99,9,3,3
+"outlive","00_chaos/outlive",0,1,0,0
+"pattern recognition","00_chaos/pattern recognition",356,80,4,3
+"covenant","00_chaos/covenant",271,40,6,6
+"synthetic truth","00_chaos/synthetic truth",389,87,5,4
+"globalization","00_chaos/globalization",158,19,5,4
+"quale","00_chaos/quale",1628,342,4,4
+"transcendent","00_chaos/transcendent",221,30,8,7
+"infinite regress","00_chaos/infinite regress",0,1,0,0
+"routine","00_chaos/routine",124,9,4,4
+"stagnate","00_chaos/stagnate",68,6,1,1
+"narrative","00_chaos/narrative",413,58,7,4
+"type","00_chaos/type",642,93,13,7
+"logical behaviorism","00_chaos/logical behaviorism",116,20,1,1
+"purchase","00_chaos/purchase",1666,273,0,0
+"Creativity, Inc","00_chaos/Creativity, Inc",5429,671,0,0
+"theorem","00_chaos/theorem",207,37,6,4
+"common ground","00_chaos/common ground",101,12,4,3
+"backpacking","00_chaos/backpacking",0,1,0,0
+"for later","00_chaos/for later",0,1,0,0
+"present","00_chaos/present",51,7,2,2
+"recursive","00_chaos/recursive",29,2,0,0
+"competition","00_chaos/competition",0,1,0,0
+"free will","00_chaos/free will",0,1,0,0
+"sunday westmont session","00_chaos/sunday westmont session",45,6,2,2
+"computer graphics","00_chaos/computer graphics",31,3,2,2
+"awge","00_chaos/awge",40,6,1,1
+"cryptocurrency","00_chaos/cryptocurrency",0,1,0,0
+"photogrammetry","00_chaos/photogrammetry",63,7,3,3
+"consistent","00_chaos/consistent",407,54,6,5
+"multiverse","00_chaos/multiverse",0,1,0,0
+"initial state","00_chaos/initial state",66,11,3,3
+"unique insight","00_chaos/unique insight",0,1,0,0
+"gradient","00_chaos/gradient",0,1,0,0
+"cinematography","00_chaos/cinematography",62,9,1,1
+"heaven","00_chaos/heaven",20,2,1,1
+"rate","00_chaos/rate",0,1,0,0
+"proxy","00_chaos/proxy",90,13,4,3
+"solution","00_chaos/solution",0,1,0,0
+"wrong","00_chaos/wrong",0,1,0,0
+"law","00_chaos/law",33,3,2,2
+"female","00_chaos/female",54,10,2,2
+"a priori","00_chaos/a priori",366,55,2,2
+"popular","00_chaos/popular",75,10,3,3
+"folder","00_chaos/folder",0,1,0,0
+"cell","00_chaos/cell",41,3,0,0
+"parent reality","00_chaos/parent reality",0,1,0,0
+"game","00_chaos/game",0,1,0,0
+"fundamental axiom","00_chaos/fundamental axiom",41,3,2,2
+"principia mathematica","00_chaos/principia mathematica",32,4,2,2
+"cgi","00_chaos/cgi",48,3,2,2
+"visualize basis","00_chaos/visualize basis",2005,280,17,15
+"books","00_chaos/books",0,1,0,0
+"idea material","00_chaos/idea material",147,21,3,3
+"3d world","00_chaos/3d world",28,3,0,0
+"gödel numbering","00_chaos/gödel numbering",131,14,4,4
+"anxiety","00_chaos/anxiety",0,1,0,0
+"health","00_chaos/health",69,7,2,2
+"countryside","00_chaos/countryside",0,1,0,0
+"volume of ideas","00_chaos/volume of ideas",104,14,5,4
+"authenticity","00_chaos/authenticity",0,1,0,0
+"mental reality","00_chaos/mental reality",0,1,0,0
+"basis guide","00_chaos/basis guide",691,155,13,13
+"artistic reality","00_chaos/artistic reality",0,1,0,0
+"identity theory","00_chaos/identity theory",1242,232,10,5
+"personal mental state","00_chaos/personal mental state",32,4,2,2
+"normal","00_chaos/normal",145,15,4,3
+"die","00_chaos/die",143,14,3,2
+"global purpose","00_chaos/global purpose",0,1,0,0
+"pilgrimage","00_chaos/pilgrimage",186,21,5,5
+"signal to noise","00_chaos/signal to noise",175,21,4,3
+"creation algorithm","00_chaos/creation algorithm",0,1,0,0
+"fpga","00_chaos/fpga",62,8,0,0
+"open-source","00_chaos/open-source",0,1,0,0
+"moral","00_chaos/moral",122,10,3,2
+"david lewis","00_chaos/david lewis",1016,185,3,3
+"drawing","00_chaos/drawing",0,1,0,0
+"choice","00_chaos/choice",58,6,1,1
+"consider","00_chaos/consider",173,20,6,6
+"predict","00_chaos/predict",0,1,0,0
+"a posteriori","00_chaos/a posteriori",311,50,1,1
+"entrepreneur","00_chaos/entrepreneur",112,10,4,4
+"unique","00_chaos/unique",104,15,4,3
+"teach","00_chaos/teach",34,3,0,0
+"physical energy","00_chaos/physical energy",63,7,2,2
+"personal soundtrack","00_chaos/personal soundtrack",273,38,6,6
+"treat others as yourself","00_chaos/treat others as yourself",225,30,6,6
+"reset","00_chaos/reset",138,25,3,3
+"dungeons and dragons","00_chaos/dungeons and dragons",49,4,2,2
+"decision tree","00_chaos/decision tree",86,7,2,2
+"trip","00_chaos/trip",0,1,0,0
+"amplitude","00_chaos/amplitude",25,4,1,1
+"simulate","00_chaos/simulate",27,2,0,0
+"polytheism","00_chaos/polytheism",31,2,0,0
+"lofi hip hop","00_chaos/lofi hip hop",0,1,0,0
+"physicalism","00_chaos/physicalism",385,69,2,2
+"ai","00_chaos/ai",0,1,0,0
+"spacesvr","00_chaos/spacesvr",109,16,2,2
+"control","00_chaos/control",79,12,0,0
+"graph","00_chaos/graph",153,14,3,3
+"time scale","00_chaos/time scale",3,2,0,0
+"compression","00_chaos/compression",167,14,4,4
+"dualism","00_chaos/dualism",432,93,1,1
+"relativity","00_chaos/relativity",5,2,0,0
+"range","00_chaos/range",55,9,0,0
+"principle","00_chaos/principle",34,4,1,1
+"algebra","00_chaos/algebra",28,2,0,0
+"number","00_chaos/number",49,4,2,2
+"evolution","00_chaos/evolution",378,45,12,9
+"daily life","00_chaos/daily life",131,15,3,3
+"5th dimension","00_chaos/5th dimension",0,1,0,0
+"discover","00_chaos/discover",128,12,3,3
+"beautiful","00_chaos/beautiful",128,14,6,6
+"idea organization","00_chaos/idea organization",0,1,0,0
+"personal purpose","00_chaos/personal purpose",36,3,0,0
+"database","00_chaos/database",0,1,0,0
+"adventure","00_chaos/adventure",0,1,0,0
+"workout","00_chaos/workout",57,5,3,3
+"diachronic identity","00_chaos/diachronic identity",96,21,3,2
+"machine learning","00_chaos/machine learning",21,2,0,0
+"software company","00_chaos/software company",60,6,1,1
+"the shed","00_chaos/the shed",0,1,0,0
+"partner","00_chaos/partner",77,11,2,1
+"2021-05-08","00_chaos/daily/2021-05-08",254,46,4,4
+"2020-05-08","00_chaos/daily/2020-05-08",111,22,2,2
+"2020-08-11","00_chaos/daily/2020-08-11",1220,232,4,3
+"2020-04-06","00_chaos/daily/2020-04-06",329,55,6,5
+"2022-10-02","00_chaos/daily/2022-10-02",7648,1097,185,93
+"2022-08-28","00_chaos/daily/2022-08-28",2160,297,63,45
+"2019-12-30","00_chaos/daily/2019-12-30",139,23,3,3
+"2021-11-01","00_chaos/daily/2021-11-01",91,16,1,1
+"2022-07-25","00_chaos/daily/2022-07-25",366,46,13,8
+"2021-02-03","00_chaos/daily/2021-02-03",520,82,7,6
+"2022-07-11","00_chaos/daily/2022-07-11",341,49,10,10
+"2019-01-16","00_chaos/daily/2019-01-16",0,1,0,0
+"2022-09-02","00_chaos/daily/2022-09-02",3793,556,98,75
+"2022-05-15","00_chaos/daily/2022-05-15",2889,399,77,40
+"2020-03-29","00_chaos/daily/2020-03-29",294,53,1,1
+"2021-11-25","00_chaos/daily/2021-11-25",1717,330,20,14
+"2021-02-13","00_chaos/daily/2021-02-13",416,62,5,5
+"2021-01-09","00_chaos/daily/2021-01-09",314,74,3,3
+"2020-04-22","00_chaos/daily/2020-04-22",1123,195,14,13
+"2022-03-10","00_chaos/daily/2022-03-10",277,43,3,3
+"2020-04-16","00_chaos/daily/2020-04-16",65,14,1,1
+"2021-08-01","00_chaos/daily/2021-08-01",948,200,8,8
+"2019-09-24","00_chaos/daily/2019-09-24",0,1,0,0
+"2020-06-02","00_chaos/daily/2020-06-02",1303,223,21,13
+"2022-10-26","00_chaos/daily/2022-10-26",94,13,1,1
+"2020-05-18","00_chaos/daily/2020-05-18",772,145,1,1
+"2022-01-10","00_chaos/daily/2022-01-10",1140,195,6,6
+"2020-08-21","00_chaos/daily/2020-08-21",231,43,2,2
+"2021-07-18","00_chaos/daily/2021-07-18",2161,555,24,15
+"2022-12-26","00_chaos/daily/2022-12-26",115,19,4,4
+"2021-04-02","00_chaos/daily/2021-04-02",5840,1240,33,21
+"2021-08-15","00_chaos/daily/2021-08-15",232,14,1,1
+"2020-04-02","00_chaos/daily/2020-04-02",732,103,18,14
+"2020-08-15","00_chaos/daily/2020-08-15",677,127,2,2
+"2022-08-18","00_chaos/daily/2022-08-18",95,11,4,4
+"2022-07-15","00_chaos/daily/2022-07-15",391,63,8,7
+"2021-11-05","00_chaos/daily/2021-11-05",2989,696,60,35
+"2021-03-09","00_chaos/daily/2021-03-09",640,104,7,6
+"2020-03-09","00_chaos/daily/2020-03-09",121,22,4,4
+"2022-09-22","00_chaos/daily/2022-09-22",609,89,21,17
+"2022-07-31","00_chaos/daily/2022-07-31",2381,340,68,43
+"2021-02-17","00_chaos/daily/2021-02-17",918,158,9,5
+"2021-11-15","00_chaos/daily/2021-11-15",1456,305,21,16
+"2022-05-11","00_chaos/daily/2022-05-11",110,17,4,4
+"2019-09-20","00_chaos/daily/2019-09-20",351,68,1,1
+"2021-06-06","00_chaos/daily/2021-06-06",87,9,2,2
+"2020-06-06","00_chaos/daily/2020-06-06",496,92,4,4
+"2021-04-12","00_chaos/daily/2021-04-12",62,13,1,1
+"2021-08-05","00_chaos/daily/2021-08-05",1753,321,38,23
+"2021-04-26","00_chaos/daily/2021-04-26",94,14,2,2
+"2022-03-14","00_chaos/daily/2022-03-14",181,24,8,7
+"2022-10-16","00_chaos/daily/2022-10-16",446,49,16,15
+"2021-07-19","00_chaos/daily/2021-07-19",221,22,9,9
+"2021-04-03","00_chaos/daily/2021-04-03",246,17,2,2
+"2020-04-03","00_chaos/daily/2020-04-03",558,78,12,10
+"2021-01-28","00_chaos/daily/2021-01-28",209,34,3,3
+"2021-03-08","00_chaos/daily/2021-03-08",243,12,2,2
+"2020-03-08","00_chaos/daily/2020-03-08",564,112,2,2
+"2021-02-06","00_chaos/daily/2021-02-06",1584,315,10,10
+"2022-07-20","00_chaos/daily/2022-07-20",726,108,7,7
+"2020-02-16","00_chaos/daily/2020-02-16",73,19,1,1
+"2021-03-18","00_chaos/daily/2021-03-18",1307,242,16,12
+"2020-11-14","00_chaos/daily/2020-11-14",663,117,1,1
+"2021-02-22","00_chaos/daily/2021-02-22",892,151,10,8
+"2020-02-22","00_chaos/daily/2020-02-22",601,108,5,5
+"2022-08-09","00_chaos/daily/2022-08-09",115,14,3,3
+"2021-06-07","00_chaos/daily/2021-06-07",557,102,7,6
+"2020-08-04","00_chaos/daily/2020-08-04",213,34,2,2
+"2021-08-04","00_chaos/daily/2021-08-04",1555,273,37,27
+"2021-07-09","00_chaos/daily/2021-07-09",54,5,3,3
+"2020-07-09","00_chaos/daily/2020-07-09",817,133,12,7
+"2022-10-23","00_chaos/daily/2022-10-23",2312,324,59,34
+"2020-08-30","00_chaos/daily/2020-08-30",523,111,1,1
+"2020-04-27","00_chaos/daily/2020-04-27",768,114,15,13
+"2022-03-15","00_chaos/daily/2022-03-15",134,20,4,4
+"2022-01-01","00_chaos/daily/2022-01-01",110,17,4,3
+"2020-06-13","00_chaos/daily/2020-06-13",232,45,1,1
+"2022-01-21","00_chaos/daily/2022-01-21",1750,276,19,15
+"2021-08-10","00_chaos/daily/2021-08-10",321,53,7,5
+"2020-06-27","00_chaos/daily/2020-06-27",420,80,7,4
+"2022-07-24","00_chaos/daily/2022-07-24",1646,218,50,27
+"2021-02-02","00_chaos/daily/2021-02-02",762,130,6,6
+"2022-05-30","00_chaos/daily/2022-05-30",2618,400,63,30
+"2022-05-04","00_chaos/daily/2022-05-04",0,1,0,0
+"2022-07-10","00_chaos/daily/2022-07-10",2052,338,31,22
+"2020-02-26","00_chaos/daily/2020-02-26",143,28,1,1
+"2021-03-28","00_chaos/daily/2021-03-28",128,20,3,3
+"2020-03-28","00_chaos/daily/2020-03-28",146,30,2,2
+"2021-02-12","00_chaos/daily/2021-02-12",404,83,1,1
+"2021-11-10","00_chaos/daily/2021-11-10",148,34,2,2
+"2022-12-07","00_chaos/daily/2022-12-07",570,73,21,16
+"2022-03-25","00_chaos/daily/2022-03-25",729,120,6,5
+"2021-04-17","00_chaos/daily/2021-04-17",99,14,3,3
+"2021-06-03","00_chaos/daily/2021-06-03",180,38,5,4
+"2022-01-31","00_chaos/daily/2022-01-31",975,176,8,8
+"2022-10-27","00_chaos/daily/2022-10-27",92,13,1,1
+"2021-05-19","00_chaos/daily/2021-05-19",1167,205,19,13
+"2020-10-05","00_chaos/daily/2020-10-05",87,19,2,2
+"2021-03-07","00_chaos/daily/2021-03-07",1362,263,18,15
+"2020-01-13","00_chaos/daily/2020-01-13",199,38,1,1
+"2020-12-25","00_chaos/daily/2020-12-25",247,48,1,1
+"2022-09-18","00_chaos/daily/2022-09-18",4317,637,81,53
+"2020-10-31","00_chaos/daily/2020-10-31",220,41,2,2
+"2021-01-27","00_chaos/daily/2021-01-27",1179,219,3,3
+"2021-05-02","00_chaos/daily/2021-05-02",1999,321,31,26
+"2022-11-06","00_chaos/daily/2022-11-06",3364,446,90,52
+"2021-07-22","00_chaos/daily/2021-07-22",4525,943,84,41
+"2022-10-18","00_chaos/daily/2022-10-18",538,47,16,15
+"2022-11-16","00_chaos/daily/2022-11-16",155,25,2,2
+"2021-04-28","00_chaos/daily/2021-04-28",2183,388,41,30
+"2022-02-20","00_chaos/daily/2022-02-20",402,58,10,7
+"2021-05-12","00_chaos/daily/2021-05-12",386,73,7,7
+"2020-06-08","00_chaos/daily/2020-06-08",480,73,8,7
+"2022-06-05","00_chaos/daily/2022-06-05",108,16,4,4
+"2020-10-21","00_chaos/daily/2020-10-21",63,14,1,1
+"2019-11-04","00_chaos/daily/2019-11-04",768,146,4,4
+"2020-01-03","00_chaos/daily/2020-01-03",299,57,2,2
+"2021-03-17","00_chaos/daily/2021-03-17",49,7,2,2
+"2021-12-21","00_chaos/daily/2021-12-21",400,75,3,3
+"2021-01-23","00_chaos/daily/2021-01-23",239,59,2,2
+"2022-08-26","00_chaos/daily/2022-08-26",317,36,11,10
+"2021-06-28","00_chaos/daily/2021-06-28",834,198,11,7
+"2020-06-28","00_chaos/daily/2020-06-28",1361,253,12,10
+"2021-07-26","00_chaos/daily/2021-07-26",653,56,1,1
+"2021-04-08","00_chaos/daily/2021-04-08",253,44,2,1
+"2020-07-12","00_chaos/daily/2020-07-12",107,23,1,1
+"2021-05-06","00_chaos/daily/2021-05-06",458,81,13,9
+"2021-07-02","00_chaos/daily/2021-07-02",666,165,3,3
+"2020-07-02","00_chaos/daily/2020-07-02",175,32,2,2
+"2020-04-18","00_chaos/daily/2020-04-18",1411,218,13,6
+"2021-04-18","00_chaos/daily/2021-04-18",277,36,4,3
+"2021-05-22","00_chaos/daily/2021-05-22",198,32,2,2
+"2020-05-22","00_chaos/daily/2020-05-22",523,92,5,5
+"2022-12-08","00_chaos/daily/2022-12-08",298,46,4,4
+"2022-11-12","00_chaos/daily/2022-11-12",145,9,1,1
+"2022-04-21","00_chaos/daily/2022-04-21",394,48,13,11
+"2021-03-13","00_chaos/daily/2021-03-13",1591,277,21,14
+"2020-01-07","00_chaos/daily/2020-01-07",240,46,5,5
+"2021-10-11","00_chaos/daily/2021-10-11",162,21,5,5
+"2021-12-05","00_chaos/daily/2021-12-05",1009,173,14,9
+"2021-03-27","00_chaos/daily/2021-03-27",18,2,1,1
+"2022-08-02","00_chaos/daily/2022-08-02",792,108,15,13
+"2020-10-25","00_chaos/daily/2020-10-25",1216,199,10,10
+"2020-12-20","00_chaos/daily/2020-12-20",691,118,3,3
+"2021-12-20","00_chaos/daily/2021-12-20",1142,263,10,9
+"2022-04-04","00_chaos/daily/2022-04-04",285,49,1,1
+"2021-01-22","00_chaos/daily/2021-01-22",246,51,3,3
+"2020-01-22","00_chaos/daily/2020-01-22",242,42,1,1
+"2019-03-29","00_chaos/daily/2019-03-29",0,1,0,0
+"2022-08-27","00_chaos/daily/2022-08-27",384,52,10,7
+"2022-04-30","00_chaos/daily/2022-04-30",4216,606,93,40
+"2021-06-29","00_chaos/daily/2021-06-29",296,69,1,1
+"2020-06-29","00_chaos/daily/2020-06-29",808,163,4,4
+"2022-11-03","00_chaos/daily/2022-11-03",704,85,25,23
+"2022-02-01","00_chaos/daily/2022-02-01",559,92,1,1
+"2020-07-27","00_chaos/daily/2020-07-27",81,17,2,2
+"2021-07-13","00_chaos/daily/2021-07-13",158,30,2,2
+"2021-05-07","00_chaos/daily/2021-05-07",183,67,1,1
+"2021-05-17","00_chaos/daily/2021-05-17",2753,582,24,16
+"2020-07-03","00_chaos/daily/2020-07-03",527,84,7,6
+"2022-10-29","00_chaos/daily/2022-10-29",139,22,0,0
+"2022-12-09","00_chaos/daily/2022-12-09",853,136,8,6
+"2022-11-13","00_chaos/daily/2022-11-13",335,49,8,5
+"2020-01-06","00_chaos/daily/2020-01-06",501,99,2,1
+"2021-10-10","00_chaos/daily/2021-10-10",1660,317,16,12
+"2022-01-10_2022-01-10-14_47.excalidraw","00_chaos/daily/2022-01-10_2022-01-10-14_47.excalidraw",123447,1474,0,0
+"2022-08-03","00_chaos/daily/2022-08-03",1316,187,44,33
+"2022-04-14","00_chaos/daily/2022-04-14",458,69,10,9
+"2021-02-28","00_chaos/daily/2021-02-28",437,82,3,3
+"2021-02-08","00_chaos/daily/2021-02-08",427,78,4,4
+"2020-03-06","00_chaos/daily/2020-03-06",126,27,1,1
+"2022-08-17","00_chaos/daily/2022-08-17",105,17,1,1
+"2021-06-19","00_chaos/daily/2021-06-19",752,135,10,8
+"2021-05-03","00_chaos/daily/2021-05-03",153,28,3,2
+"2020-09-14","00_chaos/daily/2020-09-14",223,51,1,1
+"2022-11-07","00_chaos/daily/2022-11-07",571,76,13,9
+"2022-10-09","00_chaos/daily/2022-10-09",763,103,21,18
+"2020-07-23","00_chaos/daily/2020-07-23",1478,291,6,5
+"2021-05-27","00_chaos/daily/2021-05-27",188,32,5,5
+"2022-02-15","00_chaos/daily/2022-02-15",102,15,3,3
+"2022-10-19","00_chaos/daily/2022-10-19",356,46,10,9
+"2021-04-29","00_chaos/daily/2021-04-29",40,7,2,2
+"2020-04-29","00_chaos/daily/2020-04-29",1918,262,47,24
+"2020-07-07","00_chaos/daily/2020-07-07",264,50,1,1
+"2020-05-13","00_chaos/daily/2020-05-13",872,160,4,4
+"2020-09-04","00_chaos/daily/2020-09-04",495,102,5,5
+"2022-11-23","00_chaos/daily/2022-11-23",112,15,4,4
+"2020-06-09","00_chaos/daily/2020-06-09",835,151,13,11
+"2021-03-22","00_chaos/daily/2021-03-22",186,36,5,5
+"2022-04-10","00_chaos/daily/2022-04-10",2108,270,49,32
+"2022-08-07","00_chaos/daily/2022-08-07",1744,238,41,31
+"2020-10-20","00_chaos/daily/2020-10-20",151,31,1,1
+"2020-01-02","00_chaos/daily/2020-01-02",540,103,3,3
+"2021-02-18","00_chaos/daily/2021-02-18",729,117,7,7
+"2022-06-13","00_chaos/daily/2022-06-13",49,8,2,2
+"2022-04-07","00_chaos/daily/2022-04-07",152,21,7,6
+"2020-12-23","00_chaos/daily/2020-12-23",567,136,1,1
+"2022-05-09","00_chaos/daily/2022-05-09",478,55,19,15
+"2021-12-23","00_chaos/daily/2021-12-23",234,40,6,6
+"2021-03-01","00_chaos/daily/2021-03-01",1522,341,8,7
+"2022-06-27","00_chaos/daily/2022-06-27",607,70,22,19
+"2020-10-03","00_chaos/daily/2020-10-03",612,127,2,2
+"2021-10-03","00_chaos/daily/2021-10-03",830,154,12,12
+"2020-12-17","00_chaos/daily/2020-12-17",142,23,2,2
+"2021-07-24","00_chaos/daily/2021-07-24",1475,306,10,8
+"2021-05-30","00_chaos/daily/2021-05-30",3353,779,68,35
+"2020-08-29","00_chaos/daily/2020-08-29",239,46,5,5
+"2021-09-13","00_chaos/daily/2021-09-13",998,240,19,13
+"2021-05-04","00_chaos/daily/2021-05-04",568,111,8,6
+"2021-07-10","00_chaos/daily/2021-07-10",1773,192,46,21
+"2022-02-26","00_chaos/daily/2022-02-26",47,9,1,1
+"2020-05-14","00_chaos/daily/2020-05-14",145,36,1,1
+"2022-11-10","00_chaos/daily/2022-11-10",76,5,4,4
+"2020-05-20","00_chaos/daily/2020-05-20",195,36,1,1
+"2020-01-05","00_chaos/daily/2020-01-05",835,138,2,2
+"2020-03-11","00_chaos/daily/2020-03-11",474,81,2,2
+"2022-05-19","00_chaos/daily/2022-05-19",683,97,15,9
+"2021-01-31","00_chaos/daily/2021-01-31",2492,514,9,8
+"2021-11-29","00_chaos/daily/2021-11-29",175,29,5,4
+"2022-06-23","00_chaos/daily/2022-06-23",3281,465,92,54
+"2022-08-20","00_chaos/daily/2022-08-20",106,14,4,4
+"2021-12-13","00_chaos/daily/2021-12-13",363,74,1,1
+"2021-10-07","00_chaos/daily/2021-10-07",1306,248,14,11
+"2022-04-03","00_chaos/daily/2022-04-03",1202,217,7,7
+"2022-08-14","00_chaos/daily/2022-08-14",444,71,9,7
+"2021-01-25","00_chaos/daily/2021-01-25",1131,200,10,8
+"2022-06-17","00_chaos/daily/2022-06-17",411,60,4,4
+"2019-11-16","00_chaos/daily/2019-11-16",79,16,2,2
+"2020-09-17","00_chaos/daily/2020-09-17",103,24,1,1
+"2020-08-19","00_chaos/daily/2020-08-19",168,32,1,1
+"2019-08-06","00_chaos/daily/2019-08-06",1797,343,8,8
+"2022-11-04","00_chaos/daily/2022-11-04",95,11,5,3
+"2022-11-14","00_chaos/daily/2022-11-14",353,50,10,8
+"2018-09-18","00_chaos/daily/2018-09-18",0,1,0,0
+"2022-11-20","00_chaos/daily/2022-11-20",161,22,2,2
+"2020-05-10","00_chaos/daily/2020-05-10",580,99,5,5
+"2021-05-10","00_chaos/daily/2021-05-10",656,136,12,11
+"2021-09-07","00_chaos/daily/2021-09-07",734,176,14,12
+"2020-07-04","00_chaos/daily/2020-07-04",163,28,3,3
+"2018-11-06","00_chaos/daily/2018-11-06",0,1,0,0
+"2020-10-23","00_chaos/daily/2020-10-23",451,81,1,1
+"2022-07-09","00_chaos/daily/2022-07-09",91,11,3,3
+"2021-10-17","00_chaos/daily/2021-10-17",1355,243,12,11
+"2020-10-17","00_chaos/daily/2020-10-17",75,15,2,2
+"2022-05-29","00_chaos/daily/2022-05-29",165,26,8,6
+"2020-12-03","00_chaos/daily/2020-12-03",188,46,2,2
+"2021-12-03","00_chaos/daily/2021-12-03",228,26,8,7
+"2022-08-30","00_chaos/daily/2022-08-30",173,8,3,3
+"2021-01-01","00_chaos/daily/2021-01-01",197,33,4,4
+"2021-01-10","00_chaos/daily/2021-01-10",187,33,1,1
+"2021-03-04","00_chaos/daily/2021-03-04",1378,333,13,11
+"2022-08-21","00_chaos/daily/2022-08-21",105,18,1,1
+"2021-12-12","00_chaos/daily/2021-12-12",76,13,3,3
+"2020-01-24","00_chaos/daily/2020-01-24",45,10,1,1
+"2020-12-26","00_chaos/daily/2020-12-26",1826,319,15,14
+"2021-12-26","00_chaos/daily/2021-12-26",964,183,17,13
+"2021-05-01","00_chaos/daily/2021-05-01",307,53,5,5
+"2020-05-01","00_chaos/daily/2020-05-01",1748,212,50,29
+"2022-01-29","00_chaos/daily/2022-01-29",132,19,4,4
+"2022-11-05","00_chaos/daily/2022-11-05",0,1,0,0
+"2022-03-09","00_chaos/daily/2022-03-09",512,68,13,11
+"2022-03-19","00_chaos/daily/2022-03-19",1647,276,11,5
+"2019-09-19","00_chaos/daily/2019-09-19",414,88,3,3
+"2021-07-31","00_chaos/daily/2021-07-31",1468,341,31,21
+"2020-05-25","00_chaos/daily/2020-05-25",513,62,12,8
+"2022-11-21","00_chaos/daily/2022-11-21",97,15,3,3
+"2020-08-08","00_chaos/daily/2020-08-08",162,31,1,1
+"2020-09-06","00_chaos/daily/2020-09-06",727,137,6,6
+"2022-02-23","00_chaos/daily/2022-02-23",770,118,10,9
+"2020-05-11","00_chaos/daily/2020-05-11",271,50,2,2
+"2021-09-06","00_chaos/daily/2021-09-06",2044,556,18,15
+"2021-05-11","00_chaos/daily/2021-05-11",1062,197,25,19
+"2022-07-08","00_chaos/daily/2022-07-08",1323,216,18,13
+"2021-10-22","00_chaos/daily/2021-10-22",153,25,2,2
+"2022-06-06","00_chaos/daily/2022-06-06",314,52,3,3
+"2019-10-09","00_chaos/daily/2019-10-09",769,143,2,2
+"2022-08-11","00_chaos/daily/2022-08-11",224,37,4,4
+"2022-05-08","00_chaos/daily/2022-05-08",620,68,20,16
+"2021-12-22","00_chaos/daily/2021-12-22",70,13,1,1
+"2021-01-14","00_chaos/daily/2021-01-14",96,16,2,2
+"2020-10-02","00_chaos/daily/2020-10-02",1631,355,8,8
+"2020-07-25","00_chaos/daily/2020-07-25",212,60,2,2
+"2020-05-31","00_chaos/daily/2020-05-31",142,25,2,2
+"2020-09-26","00_chaos/daily/2020-09-26",1143,197,10,10
+"2021-05-31","00_chaos/daily/2021-05-31",707,134,8,5
+"2022-11-01","00_chaos/daily/2022-11-01",174,21,7,7
+"2021-05-05","00_chaos/daily/2021-05-05",240,37,3,2
+"2021-09-12","00_chaos/daily/2021-09-12",1549,435,12,10
+"2020-07-11","00_chaos/daily/2020-07-11",460,96,5,5
+"2021-07-11","00_chaos/daily/2021-07-11",1122,238,22,13
+"2019-09-29","00_chaos/daily/2019-09-29",290,50,4,3
+"2021-07-01","00_chaos/daily/2021-07-01",936,253,1,1
+"2020-07-01","00_chaos/daily/2020-07-01",115,22,3,3
+"2022-02-27","00_chaos/daily/2022-02-27",1218,179,25,18
+"2021-05-21","00_chaos/daily/2021-05-21",557,93,16,13
+"2022-02-13","00_chaos/daily/2022-02-13",107,16,2,2
+"2021-12-06","00_chaos/daily/2021-12-06",41,7,1,1
+"2021-10-12","00_chaos/daily/2021-10-12",275,51,2,2
+"2020-10-12","00_chaos/daily/2020-10-12",489,100,2,2
+"2020-10-26","00_chaos/daily/2020-10-26",206,38,2,2
+"2022-05-18","00_chaos/daily/2022-05-18",837,104,37,31
+"2020-01-30","00_chaos/daily/2020-01-30",77,16,1,1
+"2022-03-06","00_chaos/daily/2022-03-06",1617,235,42,20
+"2022-12-10","00_chaos/daily/2022-12-10",136,22,3,3
+"2021-09-19","00_chaos/daily/2021-09-19",95,18,2,2
+"2022-10-30","00_chaos/daily/2022-10-30",1940,242,63,34
+"2020-12-29","00_chaos/daily/2020-12-29",645,114,5,5
+"2021-12-29","00_chaos/daily/2021-12-29",175,23,6,6
+"2022-07-17","00_chaos/daily/2022-07-17",349,35,9,9
+"2022-06-19","00_chaos/daily/2022-06-19",1859,300,22,20
+"2020-11-07","00_chaos/daily/2020-11-07",635,116,4,3
+"2021-11-17","00_chaos/daily/2021-11-17",467,102,1,1
+"2020-11-17","00_chaos/daily/2020-11-17",1276,221,12,9
+"2022-04-29","00_chaos/daily/2022-04-29",3648,550,61,36
+"2022-05-27","00_chaos/daily/2022-05-27",1276,176,25,20
+"2021-02-15","00_chaos/daily/2021-02-15",280,50,5,4
+"2020-11-23","00_chaos/daily/2020-11-23",68,17,1,1
+"2021-02-21","00_chaos/daily/2021-02-21",1692,413,14,9
+"2022-09-04","00_chaos/daily/2022-09-04",47,6,3,3
+"2020-02-21","00_chaos/daily/2020-02-21",0,1,0,0
+"2022-05-13","00_chaos/daily/2022-05-13",448,74,8,8
+"2022-10-20","00_chaos/daily/2022-10-20",81,13,1,1
+"2021-08-07","00_chaos/daily/2021-08-07",130,21,1,1
+"2021-04-10","00_chaos/daily/2021-04-10",695,161,14,13
+"2021-06-04","00_chaos/daily/2021-06-04",916,168,27,21
+"2020-06-04","00_chaos/daily/2020-06-04",2007,256,57,27
+"2022-02-18","00_chaos/daily/2022-02-18",160,26,3,3
+"2019-09-16","00_chaos/daily/2019-09-16",633,131,4,4
+"2021-04-24","00_chaos/daily/2021-04-24",96,15,1,1
+"2021-04-04","00_chaos/daily/2021-04-04",612,110,5,4
+"2020-04-04","00_chaos/daily/2020-04-04",909,122,28,13
+"2020-08-13","00_chaos/daily/2020-08-13",175,23,2,2
+"2020-06-10","00_chaos/daily/2020-06-10",174,29,2,2
+"2021-06-24","00_chaos/daily/2021-06-24",674,130,12,8
+"2020-06-24","00_chaos/daily/2020-06-24",276,51,5,4
+"2020-08-27","00_chaos/daily/2020-08-27",674,118,4,4
+"2021-08-27","00_chaos/daily/2021-08-27",78,13,1,1
+"2021-09-29","00_chaos/daily/2021-09-29",461,92,7,6
+"2021-02-01","00_chaos/daily/2021-02-01",92,16,1,1
+"2022-09-24","00_chaos/daily/2022-09-24",0,1,0,0
+"2022-05-07","00_chaos/daily/2022-05-07",119,17,5,5
+"2022-04-09","00_chaos/daily/2022-04-09",1922,282,40,28
+"2019-12-16","00_chaos/daily/2019-12-16",514,96,4,4
+"2022-04-19","00_chaos/daily/2022-04-19",1024,151,19,12
+"2021-02-25","00_chaos/daily/2021-02-25",635,89,14,9
+"2020-02-25","00_chaos/daily/2020-02-25",166,32,1,1
+"2022-05-17","00_chaos/daily/2022-05-17",1478,234,22,13
+"2021-11-13","00_chaos/daily/2021-11-13",147,27,1,1
+"2019-12-22","00_chaos/daily/2019-12-22",167,34,3,3
+"2022-05-23","00_chaos/daily/2022-05-23",848,144,3,3
+"2021-02-11","00_chaos/daily/2021-02-11",202,36,4,4
+"2022-12-04","00_chaos/daily/2022-12-04",4007,523,104,54
+"2020-04-20","00_chaos/daily/2020-04-20",671,135,3,3
+"2022-03-12","00_chaos/daily/2022-03-12",163,24,3,3
+"2022-02-28","00_chaos/daily/2022-02-28",320,49,5,5
+"2022-10-24","00_chaos/daily/2022-10-24",1298,178,31,22
+"2019-09-26","00_chaos/daily/2019-09-26",92,22,1,1
+"2020-04-14","00_chaos/daily/2020-04-14",721,94,21,16
+"2020-08-03","00_chaos/daily/2020-08-03",1942,374,6,5
+"2021-04-14","00_chaos/daily/2021-04-14",837,166,6,4
+"2021-08-03","00_chaos/daily/2021-08-03",62,12,1,1
+"2021-08-12","00_chaos/daily/2021-08-12",245,44,5,5
+"2020-08-12","00_chaos/daily/2020-08-12",165,41,3,3
+"2020-04-05","00_chaos/daily/2020-04-05",0,1,0,0
+"2020-06-11","00_chaos/daily/2020-06-11",65,13,3,3
+"2022-01-23","00_chaos/daily/2022-01-23",42,7,1,1
+"2021-06-11","00_chaos/daily/2021-06-11",106,29,2,2
+"2022-12-21","00_chaos/daily/2022-12-21",475,73,9,9
+"2021-09-28","00_chaos/daily/2021-09-28",2665,673,49,29
+"2022-10-01","00_chaos/daily/2022-10-01",294,44,0,0
+"2021-12-18","00_chaos/daily/2021-12-18",440,89,7,6
+"2019-10-27","00_chaos/daily/2019-10-27",82,15,2,2
+"2022-09-11","00_chaos/daily/2022-09-11",5141,741,99,61
+"2022-05-06","00_chaos/daily/2022-05-06",605,80,15,13
+"2022-04-08","00_chaos/daily/2022-04-08",0,1,0,0
+"2021-02-24","00_chaos/daily/2021-02-24",547,97,5,5
+"2022-09-01","00_chaos/daily/2022-09-01",367,61,5,3
+"2022-05-16","00_chaos/daily/2022-05-16",354,64,1,1
+"2020-10-28","00_chaos/daily/2020-10-28",0,1,0,0
+"2020-02-10","00_chaos/daily/2020-02-10",75,9,1,1
+"2022-05-22","00_chaos/daily/2022-05-22",547,83,11,9
+"2021-02-10","00_chaos/daily/2021-02-10",564,108,8,8
+"2021-04-21","00_chaos/daily/2021-04-21",363,53,10,9
+"2022-03-13","00_chaos/daily/2022-03-13",662,93,17,14
+"2021-06-01","00_chaos/daily/2021-06-01",62,9,3,3
+"2020-06-01","00_chaos/daily/2020-06-01",617,77,23,17
+"2020-08-02","00_chaos/daily/2020-08-02",561,101,5,4
+"2019-07-24","00_chaos/daily/2019-07-24",384,73,5,3
+"2021-08-02","00_chaos/daily/2021-08-02",85,14,1,1
+"2021-04-15","00_chaos/daily/2021-04-15",4482,724,52,35
+"2019-05-10","00_chaos/daily/2019-05-10",0,1,0,0
+"2020-06-15","00_chaos/daily/2020-06-15",300,49,3,3
+"2020-09-18","00_chaos/daily/2020-09-18",101,22,1,1
+"2022-12-25","00_chaos/daily/2022-12-25",72,14,0,0
+"2022-10-31","00_chaos/daily/2022-10-31",320,47,7,7
+"2022-09-15","00_chaos/daily/2022-09-15",288,39,10,10
+"2021-02-04","00_chaos/daily/2021-02-04",82,16,2,2
+"2019-10-23","00_chaos/daily/2019-10-23",0,1,0,0
+"2021-11-16","00_chaos/daily/2021-11-16",1953,353,42,22
+"2022-04-28","00_chaos/daily/2022-04-28",0,1,0,0
+"2020-02-14","00_chaos/daily/2020-02-14",0,1,0,0
+"2021-02-14","00_chaos/daily/2021-02-14",341,59,4,4
+"2022-07-06","00_chaos/daily/2022-07-06",299,38,8,8
+"2021-02-20","00_chaos/daily/2021-02-20",204,21,2,2
+"2022-05-12","00_chaos/daily/2022-05-12",234,31,7,6
+"2021-09-08","00_chaos/daily/2021-09-08",2495,543,42,35
+"2021-04-11","00_chaos/daily/2021-04-11",1590,311,22,19
+"2021-08-06","00_chaos/daily/2021-08-06",229,34,1,1
+"2019-09-23","00_chaos/daily/2019-09-23",353,62,6,6
+"2021-06-05","00_chaos/daily/2021-06-05",1253,264,25,23
+"2021-04-25","00_chaos/daily/2021-04-25",482,82,2,2
+"2022-03-17","00_chaos/daily/2022-03-17",299,49,5,5
+"potential","02_basis/potential",115,12,5,5
+"definition","02_basis/definition",57,5,0,0
+"judge","02_basis/judge",249,24,5,4
+"concept","02_basis/concept",44,6,2,2
+"search","02_basis/search",97,13,5,5
+"art","02_basis/art",44,4,2,2
+"implement","02_basis/implement",362,30,9,9
+"axiom","02_basis/axiom",638,77,18,10
+"character","02_basis/character",107,8,3,3
+"sample","02_basis/sample",163,13,6,6
+"map","02_basis/map",78,6,2,2
+"artist","02_basis/artist",97,7,3,3
+"volume","02_basis/volume",1014,128,29,15
+"free","02_basis/free",105,9,2,2
+"mental state","02_basis/mental state",40,6,2,2
+"captivate","02_basis/captivate",109,12,3,3
+"universe","02_basis/universe",310,26,10,10
+"truth","02_basis/truth",410,46,14,10
+"nature","02_basis/nature",102,11,3,3
+"change","02_basis/change",94,8,3,3
+"scale","02_basis/scale",178,20,4,4
+"absolute truth","02_basis/absolute truth",184,16,6,5
+"knowledge","02_basis/knowledge",49,3,2,2
+"identity","02_basis/identity",296,43,4,4
+"leverage","02_basis/leverage",109,14,3,3
+"history","02_basis/history",121,13,4,4
+"apply","02_basis/apply",119,11,5,3
+"output","02_basis/output",73,7,3,3
+"study","02_basis/study",107,9,4,4
+"friction vs utility","02_basis/friction vs utility",233,21,7,5
+"invest","02_basis/invest",193,18,6,5
+"execution state","02_basis/execution state",153,23,4,4
+"creator","02_basis/creator",103,8,3,3
+"essay","02_basis/essay",78,7,1,1
+"immersion","02_basis/immersion",151,12,4,4
+"realitybuilding","02_basis/realitybuilding",81,4,2,2
+"venture","02_basis/venture",480,52,12,12
+"relationship","02_basis/relationship",168,18,3,3
+"domain","02_basis/domain",135,12,4,4
+"mind","02_basis/mind",240,24,7,6
+"via","02_basis/via",109,12,3,2
+"teleport","02_basis/teleport",116,8,3,3
+"friction","02_basis/friction",98,15,1,1
+"time","02_basis/time",227,29,6,5
+"algorithm","02_basis/algorithm",84,10,1,1
+"build","02_basis/build",400,47,7,6
+"optimize","02_basis/optimize",314,41,5,4
+"basis","02_basis/basis",1489,216,31,19
+"iteration","02_basis/iteration",180,21,3,2
+"place","02_basis/place",127,12,5,5
+"story","02_basis/story",309,23,12,10
+"functionalism","02_basis/functionalism",2843,604,36,20
+"symbol","02_basis/symbol",120,13,5,4
+"design","02_basis/design",104,6,2,2
+"resource","02_basis/resource",70,6,2,2
+"technical","02_basis/technical",150,13,4,4
+"framework","02_basis/framework",183,17,5,3
+"question","02_basis/question",132,13,4,4
+"chaos vs order","02_basis/chaos vs order",22,3,2,2
+"code","02_basis/code",57,5,2,2
+"logic","02_basis/logic",92,8,3,3
+"belief","02_basis/belief",334,42,11,9
+"chaos","02_basis/chaos",146,13,3,3
+"moment","02_basis/moment",89,7,2,2
+"build algorithm","02_basis/build algorithm",80,10,3,3
+"logical construction","02_basis/logical construction",321,28,5,4
+"organization","02_basis/organization",1346,170,36,17
+"order","02_basis/order",125,9,3,3
+"medium","02_basis/medium",131,12,4,4
+"interface","02_basis/interface",182,19,6,6
+"growth funnel","02_basis/growth funnel",3128,399,95,50
+"utility","02_basis/utility",240,29,4,4
+"conquer the unknown","02_basis/conquer the unknown",237,26,6,6
+"derivation","02_basis/derivation",198,17,5,4
+"shared graph","03_stories/tools/shared graph",131,11,4,3
+"03_stories","03_stories/layers/03_stories",31,3,2,2
+"01_metaphysics","03_stories/layers/01_metaphysics",29,3,2,2
+"02_basis","03_stories/layers/02_basis",23,3,2,2
+"more true than true","03_stories/morals/more true than true",290,33,10,10
+"sesame tree","03_stories/places/sesame tree",16,3,0,0
+"madrid","03_stories/places/madrid",19,4,1,1
+"apple visitor center","03_stories/places/apple visitor center",26,3,1,1
+"661","03_stories/places/661",32,4,0,0
+"italy","03_stories/places/italy",0,1,0,0
+"sabado","03_stories/places/sabado",44,5,0,0
+"netherlands","03_stories/places/netherlands",66,7,1,1
+"france","03_stories/places/france",0,1,0,0
+"spain","03_stories/places/spain",26,2,0,0
+"europe","03_stories/places/europe",93,10,6,6
+"germany","03_stories/places/germany",25,2,0,0
+"personal 27 - mission","03_stories/algorithms/personal 27 - mission",1089,162,12,8
+"personal 26 - exceptional","03_stories/algorithms/personal 26 - exceptional",1471,184,30,19
+"personal 28 - union","03_stories/algorithms/personal 28 - union",503,61,10,9
+"personal 31 - focus","03_stories/algorithms/personal 31 - focus",557,57,15,15
+"personal 30 - gratification","03_stories/algorithms/personal 30 - gratification",342,37,5,5
+"personal 29 - pilgrimage","03_stories/algorithms/personal 29 - pilgrimage",3049,474,39,23
+"a cozy lofi","03_stories/worlds/a cozy lofi",81,13,0,0
+"rain in london","03_stories/worlds/rain in london",102,15,5,5
+"neon jungle","03_stories/worlds/neon jungle",43,6,2,2
+"mediated.world","03_stories/worlds/mediated.world",0,1,0,0
+"a 50's romance","03_stories/worlds/a 50's romance",143,28,2,2
+"quixote","03_stories/worlds/quixote",389,53,7,7
+"a class of models with the potential to represent fundamental physics","03_stories/works/a class of models with the potential to represent fundamental physics",2091,297,30,22
+"cain and abel","03_stories/works/cain and abel",91,9,5,5
+"midnight gospel","03_stories/works/midnight gospel",40,5,1,1
+"genesis","03_stories/works/genesis",27,5,1,1
+"wikipedia","03_stories/works/wikipedia",17,1,0,0
+"frankenstein","03_stories/works/frankenstein",112,16,4,4
+"The Great Gatsby","03_stories/works/The Great Gatsby",19461,2463,0,0
+"westworld","03_stories/works/westworld",0,1,0,0
+"the office","03_stories/works/the office",16,3,0,0
+"godel escher bach","03_stories/works/godel escher bach",342,49,7,6
+"bible","03_stories/works/bible",68,9,0,0
+"the black journal","03_stories/works/the black journal",45,4,3,3
+"the white journal","03_stories/works/the white journal",123,19,4,4
+"12 Rules for Life","03_stories/works/12 Rules for Life",28633,3726,0,0
+"essay concerning human understanding","03_stories/works/essay concerning human understanding",24,5,1,1
+"the isomorphism of ideas","03_stories/works/the isomorphism of ideas",120,7,2,2
+"adam and eve","03_stories/works/adam and eve",209,34,5,5
+"All You Need to Know About the Music Business","03_stories/works/All You Need to Know About the Music Business",3423,409,0,0
+"A Beautiful Question","03_stories/works/A Beautiful Question",10768,1289,0,0
+"Interactive Basis","03_stories/personals/Interactive Basis",73,13,3,3
+"dormant state","03_stories/personals/dormant state",98,17,2,2
+"introduction to growth funnel","03_stories/personals/introduction to growth funnel",3093,380,84,49
+"Joshua Tree Sunrise Mix","03_stories/personals/Joshua Tree Sunrise Mix",1792,497,5,5
+"personal growth","03_stories/personals/personal growth",23,2,2,2
+"Narrow it Down to the Bone","03_stories/personals/Narrow it Down to the Bone",134,14,3,3
+"personal home growth funnel","03_stories/personals/personal home growth funnel",441,50,13,11
+"Latent Explorer","03_stories/personals/Latent Explorer",163,14,5,5
+"personal routine","03_stories/personals/personal routine",846,135,4,4
+"The Discovery Of Difference","03_stories/personals/The Discovery Of Difference",275,36,1,1
+"personal story","03_stories/personals/personal story",2303,305,50,38
+"What's Left","03_stories/personals/What's Left",360,52,7,6
+"trailer.mediated.world","03_stories/personals/trailer.mediated.world",176,21,4,3
+"Search For Reality","03_stories/personals/Search For Reality",2043,268,52,23
+"personal graph","03_stories/personals/personal graph",25,3,2,2
+"Analysis, Synthesis, Abstraction","03_stories/personals/Analysis, Synthesis, Abstraction",234,18,8,8
+"The Fundamental Axiom","03_stories/personals/The Fundamental Axiom",149,26,4,4
+"I Want To Find You","03_stories/personals/I Want To Find You",64,3,0,0
+"lost","03_stories/states/lost",113,17,3,3
+"with great power comes great responsibility","03_stories/concepts/with great power comes great responsibility",51,6,2,2
+"want the best for","03_stories/concepts/want the best for",162,21,4,2
+"walled garden","03_stories/symbols/walled garden",408,50,14,9
+"cross","03_stories/symbols/cross",100,10,4,4
+"animal","03_stories/creatures/animal",61,6,2,2
+"equal to","03_stories/relationships/equal to",96,10,2,2
+"emergent","03_stories/relationships/emergent",133,12,4,3
+"opposite of","03_stories/relationships/opposite of",118,17,4,4
+"different","03_stories/relationships/different",83,13,4,3
+"greater than","03_stories/relationships/greater than",131,22,6,4
+"type of","03_stories/relationships/type of",119,12,4,4
+"instance of","03_stories/relationships/instance of",106,9,3,3
+"subset of","03_stories/relationships/subset of",127,18,4,3
+"set of","03_stories/relationships/set of",174,17,6,6
+"how to implement a reality","03_stories/basis/how to implement a reality",199,30,5,4
+"basis story","03_stories/basis/basis story",26,4,2,2
+"daniel dennett","03_stories/entities/daniel dennett",3640,812,10,8
+"chatGPT","03_stories/entities/chatGPT",22,3,2,2
+"karl popper","03_stories/entities/karl popper",0,1,0,0
+"shakespeare","03_stories/entities/shakespeare",22,2,1,1
+"studio syro","03_stories/entities/studio syro",35,5,1,1
+"richard dawkins","03_stories/entities/richard dawkins",0,1,0,0
+"kurt godel","03_stories/entities/kurt godel",80,5,2,2
+"mark twain","03_stories/entities/mark twain",0,1,0,0
+"robert breedlove","03_stories/entities/robert breedlove",0,1,0,0
+"descartes","03_stories/entities/descartes",29,2,0,0
+"davidson","03_stories/entities/davidson",1290,391,7,5
+"biblical god","03_stories/entities/biblical god",73,10,3,3
+"hilary putnam","03_stories/entities/hilary putnam",1188,262,5,5
+"alex epstein","03_stories/entities/alex epstein",0,1,0,0
+"ben shapiro","03_stories/entities/ben shapiro",0,1,0,0
+"alan watts","03_stories/entities/alan watts",0,1,0,0
+"ludwig wittgenstein","03_stories/entities/ludwig wittgenstein",49,1,0,0
+"ruth millikan","03_stories/entities/ruth millikan",374,82,1,1
+"ben","03_stories/entities/ben",0,1,0,0
+"openai","03_stories/entities/openai",27,4,2,2
+"naval","03_stories/entities/naval",0,1,0,0
+"adam smith","03_stories/entities/adam smith",26,2,1,1
+"duncan trussell","03_stories/entities/duncan trussell",27,4,1,1
+"freud","03_stories/entities/freud",0,1,0,0
+"einstein","03_stories/entities/einstein",13,3,0,0
+"stephen wolfram","03_stories/entities/stephen wolfram",0,1,0,0
+"dm armstrong","03_stories/entities/dm armstrong",1079,213,8,8
+"donald hoffman","03_stories/entities/donald hoffman",37,7,0,0
+"don quixote","03_stories/entities/don quixote",39,4,1,1
+"picasso","03_stories/entities/picasso",5,1,0,0
+"whitehead","03_stories/entities/whitehead",0,1,0,0
+"max cooper","03_stories/entities/max cooper",0,1,0,0
+"lex fridman","03_stories/entities/lex fridman",0,1,0,0
+"johann sebastian bach","03_stories/entities/johann sebastian bach",36,3,1,1
+"mc escher","03_stories/entities/mc escher",38,4,3,3
+"ned block","03_stories/entities/ned block",159,32,2,2
+"gary vee","03_stories/entities/gary vee",0,1,0,0
+"yggdrasill","03_stories/entities/yggdrasill",102,12,2,2
+"jesus christ","03_stories/entities/jesus christ",93,12,3,3
+"aether","03_stories/entities/aether",0,1,0,0
+"colin and samir","03_stories/entities/colin and samir",20,4,0,0
+"joey pecoraro","03_stories/entities/joey pecoraro",48,6,2,2
+"elon musk","03_stories/entities/elon musk",0,1,0,0
+"douglas hofstadter","03_stories/entities/douglas hofstadter",6,1,0,0
+"claude shannon","03_stories/entities/claude shannon",0,1,0,0
+"late year","03_stories/entities/late year",0,1,0,0
+"marcos novak","03_stories/entities/marcos novak",0,1,0,0
+"jordan peterson","03_stories/entities/jordan peterson",0,1,0,0
+"fred dretske","03_stories/entities/fred dretske",3534,735,15,11
+"joscha bach","03_stories/entities/joscha bach",846,32,5,4
+"chamath palihapitiya","03_stories/entities/chamath palihapitiya",53,6,1,1
+"frank jackson","03_stories/entities/frank jackson",3533,793,12,5
+"pmndrs","03_stories/entities/pmndrs",62,7,2,2
+"john locke","03_stories/entities/john locke",0,1,0,0
+"sam harris","03_stories/entities/sam harris",0,1,0,0
+"jjc smart","03_stories/entities/jjc smart",0,1,0,0
+"gpt-3","03_stories/entities/gpt-3",2685,572,3,3
+"olafur eliasson","03_stories/entities/olafur eliasson",0,1,0,0
+"muse","03_stories/entities/muse",119,11,4,4
+"gilbert ryle","03_stories/entities/gilbert ryle",381,67,8,8
+"joseph","03_stories/entities/joseph",121,21,1,1
+"odesza","03_stories/entities/odesza",0,1,0,0
+"disney","03_stories/entities/disney",0,1,0,0
+"lee cronin","03_stories/entities/lee cronin",0,1,0,0
+"satan","03_stories/entities/satan",0,1,0,0
+"michelangelo","03_stories/entities/michelangelo",24,4,1,1
+"tourist","03_stories/entities/tourist",86,15,2,2
+"asap rocky","03_stories/entities/asap rocky",17,3,0,0
+"mary","03_stories/entities/mary",67,8,3,3
+"russell","03_stories/entities/russell",0,1,0,0
+"parra for cuva","03_stories/entities/parra for cuva",0,1,0,0
+"emma","03_stories/entities/emma",0,1,0,0
