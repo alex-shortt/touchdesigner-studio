@@ -254,6 +254,7 @@
 "inevitable","00_chaos/inevitable",53,4,1,1
 "success","00_chaos/success",25,4,1,1
 "form","00_chaos/form",0,1,0,0
+"perfect","00_chaos/perfect",102,9,2,2
 "founder","00_chaos/founder",175,15,4,3
 "nerve","00_chaos/nerve",227,34,2,2
 "condition","00_chaos/condition",143,15,5,5
@@ -289,6 +290,7 @@
 "propositional calculus","00_chaos/propositional calculus",632,106,3,3
 "diversity","00_chaos/diversity",0,1,0,0
 "tool","00_chaos/tool",43,6,0,0
+"polish","00_chaos/polish",55,5,2,2
 "momentum","00_chaos/momentum",71,12,1,1
 "sense","00_chaos/sense",66,5,2,2
 "love","00_chaos/love",123,18,3,3
@@ -504,10 +506,11 @@
 "vector","00_chaos/vector",93,5,2,2
 "color","00_chaos/color",0,1,0,0
 "automata","00_chaos/automata",0,1,0,0
+"sunday","00_chaos/sunday",83,8,1,1
 "empiricism","00_chaos/empiricism",131,12,4,4
 "alias","00_chaos/alias",303,43,10,3
 "universal law","00_chaos/universal law",33,3,0,0
-"societal reality","00_chaos/societal reality",68,6,3,3
+"societal reality","00_chaos/societal reality",103,8,3,3
 "personal site","00_chaos/personal site",0,1,0,0
 "quantize","00_chaos/quantize",128,10,3,3
 "generate","00_chaos/generate",28,2,0,0
@@ -523,6 +526,7 @@
 "cognitive science","00_chaos/cognitive science",0,1,0,0
 "garden","00_chaos/garden",0,1,0,0
 "devil","00_chaos/devil",60,6,3,3
+"politics","00_chaos/politics",64,6,3,3
 "post yc","00_chaos/post yc",138,31,3,3
 "category theory","00_chaos/category theory",0,1,0,0
 "deterministic","00_chaos/deterministic",0,1,0,0
@@ -894,6 +898,7 @@
 "2020-04-27","00_chaos/daily/2020-04-27",768,114,15,13
 "2022-03-15","00_chaos/daily/2022-03-15",134,20,4,4
 "2022-01-01","00_chaos/daily/2022-01-01",110,17,4,3
+"2023-01-01","00_chaos/daily/2023-01-01",1148,169,24,21
 "2020-06-13","00_chaos/daily/2020-06-13",232,45,1,1
 "2022-01-21","00_chaos/daily/2022-01-21",1750,276,19,15
 "2021-08-10","00_chaos/daily/2021-08-10",321,53,7,5
@@ -1052,7 +1057,7 @@
 "2022-11-04","00_chaos/daily/2022-11-04",95,11,5,3
 "2022-11-14","00_chaos/daily/2022-11-14",353,50,10,8
 "2018-09-18","00_chaos/daily/2018-09-18",0,1,0,0
-"2022-11-20","00_chaos/daily/2022-11-20",161,22,2,2
+"2022-11-20","00_chaos/daily/2022-11-20",154,21,2,2
 "2020-05-10","00_chaos/daily/2020-05-10",580,99,5,5
 "2021-05-10","00_chaos/daily/2021-05-10",656,136,12,11
 "2021-09-07","00_chaos/daily/2021-09-07",734,176,14,12
@@ -1121,7 +1126,7 @@
 "2022-05-18","00_chaos/daily/2022-05-18",837,104,37,31
 "2020-01-30","00_chaos/daily/2020-01-30",77,16,1,1
 "2022-03-06","00_chaos/daily/2022-03-06",1617,235,42,20
-"2022-12-10","00_chaos/daily/2022-12-10",136,22,3,3
+"2022-12-10","00_chaos/daily/2022-12-10",154,25,3,3
 "2021-09-19","00_chaos/daily/2021-09-19",95,18,2,2
 "2022-10-30","00_chaos/daily/2022-10-30",1940,242,63,34
 "2020-12-29","00_chaos/daily/2020-12-29",645,114,5,5
@@ -1281,6 +1286,7 @@
 "iteration","02_basis/iteration",180,21,3,2
 "place","02_basis/place",127,12,5,5
 "story","02_basis/story",309,23,12,10
+"sacred","02_basis/sacred",133,16,7,4
 "functionalism","02_basis/functionalism",2843,604,36,20
 "symbol","02_basis/symbol",120,13,5,4
 "design","02_basis/design",104,6,2,2
@@ -1346,6 +1352,7 @@
 "the black journal","03_stories/works/the black journal",45,4,3,3
 "the white journal","03_stories/works/the white journal",123,19,4,4
 "12 Rules for Life","03_stories/works/12 Rules for Life",28633,3726,0,0
+"boardwalk empire","03_stories/works/boardwalk empire",7,2,0,0
 "essay concerning human understanding","03_stories/works/essay concerning human understanding",24,5,1,1
 "the isomorphism of ideas","03_stories/works/the isomorphism of ideas",120,7,2,2
 "adam and eve","03_stories/works/adam and eve",209,34,5,5
@@ -1364,7 +1371,7 @@
 "personal story","03_stories/personals/personal story",2303,305,50,38
 "What's Left","03_stories/personals/What's Left",360,52,7,6
 "trailer.mediated.world","03_stories/personals/trailer.mediated.world",176,21,4,3
-"Search For Reality","03_stories/personals/Search For Reality",2043,268,52,23
+"Search For Reality","03_stories/personals/Search For Reality",2042,267,52,23
 "personal graph","03_stories/personals/personal graph",25,3,2,2
 "Analysis, Synthesis, Abstraction","03_stories/personals/Analysis, Synthesis, Abstraction",234,18,8,8
 "The Fundamental Axiom","03_stories/personals/The Fundamental Axiom",149,26,4,4
