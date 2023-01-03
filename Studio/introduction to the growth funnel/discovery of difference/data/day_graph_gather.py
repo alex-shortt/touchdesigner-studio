@@ -17,13 +17,18 @@ num_day_lookup = {}
 path_lookup = {}
 
 
-def get_links(text):
-    words = []
-    matches = re.findall('\[\[.*?\]\]', text)
-    for match in matches:
-        words.append(match.replace("[[", "").replace("]]", "").split("|")[0])
+def get_links_and_perc(text):
+    words_and_perc = []
+    # matches = re.findall('\[\[.*?\]\]', text)
+    # for match in matches:
+    #     words.append(match.replace("[[", "").replace("]]", "").split("|")[0])
 
-    return words
+    for match in re.finditer('\[\[.*?\]\]', text):
+        percentage = (match.start() / len(text))
+        clean = match.group().replace("[[", "").replace("]]", "").split("|")[0]
+        words_and_perc.append((clean, percentage))
+
+    return words_and_perc
 
 
 ########################################################################################
@@ -57,26 +62,24 @@ with open('day_graph.csv', 'w') as f:
     for day_path in num_day_lookup:
         # open file
         with open(day_path, 'r+') as day_file:
-            links = get_links(day_file.read())
+            links_and_percs = get_links_and_perc(day_file.read())
 
             num_day = num_day_lookup[day_path]
             day_name = day_path.split("/daily/")[1].replace(".md", "")
         
-            if len(links) == 0:
-                f.write(str(num_day) + "," + day_name + "," + "" + "," + "" + "\n")
-                continue
+            f.write(str(num_day) + "," + day_name + ",\n")
 
-            for link in links:
+            for (link, perc) in links_and_percs:
+                dist = num_day + perc
+                dist_str = "{:.3f}".format(dist)
+                f.write(dist_str + "," + day_name + ",\"" + link + "\"\n")
+
                 if link not in path_lookup:
                     continue
 
                 sub_path = path_lookup[link]
                 sub_text = open(sub_path, 'r+').read()
-                sub_links = get_links(sub_text)
+                # sub_links = get_links(sub_text)
 
-                if len(sub_links) == 0:
-                    f.write(str(num_day) + "," + day_name + ",\"" + link + "\"," + "" + "\n")
-                    continue
-
-                for sub_link in sub_links:
-                    f.write(str(num_day) + "," + day_name + ",\"" + link + "\",\"" + sub_link + "\"\n")
+                # for sub_link in sub_links:
+                #     f.write(str(num_day) + "," + day_name + ",\"" + link + "\",\"" + sub_link + "\"\n")
